@@ -17,8 +17,8 @@ PNG, PDF and PowerPoint, and a gauntlet that keeps all of it honest. The engine 
 
 - macOS or Linux, Node 20 or newer, git.
 - Claude Code (the skill is a folder Claude Code reads), or any agent that can follow `SKILL.md`.
-- The ProductTank lockup files for your city, from Mind the Product's ProductTank logo repository
-  (ask your regional coordinator). Until you add them the templates show a typed placeholder.
+- For a city other than Brussels: your city's ProductTank lockup files from Mind the Product's
+  ProductTank logo repository (ask your regional coordinator). Brussels ships ready.
 
 ## Install
 
@@ -47,6 +47,9 @@ Short sentences, one action per line.
    ```
 
 ## Your city's lockup
+
+Brussels is built in (`captures/producttank/assets/logo/producttank-brussels-*.svg`, included with
+Mind the Product's permission, see `NOTICE`). For another city:
 
 1. Get `ProductTank-logo-<City>-midnight.svg` and `-white.svg` from Mind the Product.
 2. Copy them into `captures/producttank/assets/logo/` as `producttank-<city>-midnight.svg` and `producttank-<city>-white.svg` (lower case, no spaces).
@@ -133,9 +136,10 @@ demos/2026-10-08/             three finished canvases with typed speaker slots
 ## Licensing and trademarks
 
 Apache-2.0 for everything authored here (`LICENSE`). ProductTank and Mind the Product are Mind the
-Product's trademarks; their lockups, wordmark, photography and official drawings are not in this
-repository, and the placeholders are not the logo. Montserrat ships under the SIL Open Font License.
-Details: `NOTICE`.
+Product's trademarks. Their lockups, wordmark and brand drawings are included with Mind the
+Product's permission for ProductTank organisers and stay Mind the Product's property; they are not
+under the Apache licence and are not for reuse outside ProductTank. Montserrat ships under the SIL
+Open Font License. Details: `NOTICE`.
 
 ## Contributing
 

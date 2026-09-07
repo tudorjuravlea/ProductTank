@@ -7,3 +7,8 @@ demos/**/out/
 out/
 *.pptx
 *.pdf
+# iCloud conflict copies
+* 2
+* 2.*
+* 3
+* 3.*

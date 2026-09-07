@@ -23,7 +23,7 @@ ${L('white', 420)}`) };
 T.welcome = { ground: 'black', html: slide('welcome', 'welcome', 'black', `
 ${photo('left:0;top:0;width:100%;height:100%', 'Textural photo slot: a scene from a past evening, full-bleed, takes the tritone wash', 'photo textural')}
 <div class="copy" style="top: 120px; left: 0; right: 0; text-align: center">
-  <img src="../../assets/logo/mtp-wordmark-placeholder-white.svg" alt="Mind the Product" width="220" style="display:inline-block" data-slot="cobrand">
+  <img src="../../assets/logo/mtp-wordmark-white.svg" alt="Mind the Product" width="220" style="display:inline-block" data-slot="cobrand">
 </div>
 <div class="copy" style="top: 360px; left: 240px; right: 240px; text-align: center">
   <h1 class="slide-title" data-slot="headline" style="font-size: var(--space-14)">Our mission is to foster collaboration and growth within local product management communities to drive innovation and <span class="underline-markup">excellence.</span></h1>

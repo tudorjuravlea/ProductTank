@@ -7,12 +7,14 @@ design lock in this repository.
 
 Trademarks and brand assets, not covered by the licence:
 - "ProductTank" and "Mind the Product" are trademarks of Mind the Product (Pendo.io, Inc.).
-  This repository is an organiser's tool and is not affiliated with, endorsed by or maintained by
-  Mind the Product.
-- The ProductTank city lockups, the Mind the Product wordmark, Mind the Product's photography
-  and its official venn and markup drawings are NOT included. The files under assets/logo/ are
-  typed placeholders drawn for this repository; organisers replace them with the files Mind the
-  Product provides in its ProductTank logo repository (see assets/logo/README.md).
+  This repository is an organiser's tool, not maintained by Mind the Product.
+- The ProductTank lockups (assets/logo/producttank-*.svg), the Mind the Product wordmark
+  (assets/logo/mtp-wordmark-*.svg) and Mind the Product's venn circle and markup drawings
+  (assets/shapes/) are included with the permission of Mind the Product's EMEA regional
+  coordinator (September 2026) for use by ProductTank organisers. They remain Mind the Product's
+  property and are NOT licensed under Apache-2.0: use them for ProductTank communication only,
+  as the Brand Guide describes (captures/producttank/components/lockup.md), and do not reuse them
+  for anything else. Mind the Product's photography is not included.
 - The brand facts recorded here (colour values, type sizes, layout rules) describe Mind the
   Product's Brand Guide for the purpose of following it; the guide itself is Mind the Product's.
 
