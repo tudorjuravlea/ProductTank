@@ -6,7 +6,7 @@ Mind the Product brand. A machine checks each one before you use it.
 ProductTank meetups are free events for product people. Mind the Product runs the ProductTank
 network. This tool was made for ProductTank Brussels. Any ProductTank can use it.
 
-![Three example canvases](docs/demo-linkedin-post-2026-10-08.png)
+![Example: a LinkedIn post made with this tool](docs/demo-linkedin-post-2026-10-08.png)
 
 ## What you get
 
@@ -18,8 +18,9 @@ network. This tool was made for ProductTank Brussels. Any ProductTank can use it
 - The official ProductTank Brussels logo files and the Mind the Product shapes. Mind the Product
   gave permission to include them.
 
-You do not need to know code. You give the facts of the event. The tool makes the canvas. If you
-do not give a fact, the tool leaves an empty slot. It does not invent a date, a place or a name.
+You do not need to know code. You give the facts of the event. The tool makes the canvas. A canvas
+is one picture at the size a channel needs, for example a LinkedIn post or a slide. If you do not
+give a fact, the tool leaves an empty slot. It does not invent a date, a place or a name.
 
 ## How it works
 

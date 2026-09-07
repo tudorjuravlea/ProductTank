@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0 — 2026-09-07
+## 0.3.0 (2026-09-07)
 
 First public release, exported from the maintainer's working repository.
 

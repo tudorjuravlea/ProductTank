@@ -1,9 +1,9 @@
 ---
 name: producttank
-description: Pixel-precise generation locked to the ProductTank Brussels design system (a Mind the Product meetup), with a machine-verified ship gate (render → pixel-diff + token/microcopy lint via the shared fidelity engine) for social posts and slide decks. Use ONLY when the user explicitly asks to build/reproduce screens in ProductTank Brussels, make a ProductTank social post, story, banner or deck, run its fidelity pipeline, or bootstrap its component library. NEVER trigger automatically on generic design or UI tasks. Invoke explicitly.
+description: Pixel-precise generation locked to the ProductTank Brussels design system (a Mind the Product meetup), with a machine-verified ship gate (render, then pixel diff, then token and microcopy lint through the shared fidelity engine) for social posts and slide decks. Use ONLY when the user explicitly asks to build/reproduce screens in ProductTank Brussels, make a ProductTank social post, story, banner or deck, run its fidelity pipeline, or bootstrap its component library. NEVER trigger automatically on generic design or UI tasks. Invoke explicitly.
 ---
 
-# ProductTank Brussels — Design-System Fidelity
+# ProductTank Brussels: design-system fidelity
 
 You are in **fidelity mode** for one design system: **ProductTank Brussels**, the Brussels meetup of
 the Mind the Product community. The brand is Mind the Product's (Brand Guide 2024, captured from
@@ -12,23 +12,23 @@ community's **social posts** (LinkedIn, Instagram, Meetup, stories, banners) and
 The design system is a hard constraint, not a suggestion; variance is a defect. All machinery is
 shared:
 
-- **ENGINE** = `~/.claude/fidelity-engine/` — scripts, references, schema, runtime deps.
+- **ENGINE** = `~/.claude/fidelity-engine/`: scripts, references, schema, runtime deps.
   **Read `ENGINE/CONTRACT.md` before anything else** (exit codes, invariants, gate ordering).
-- **LOCK** = `~/.claude/skills/producttank/captures/producttank/design-lock.json` — the frozen SSOT:
+- **LOCK** = `~/.claude/skills/producttank/captures/producttank/design-lock.json`: the frozen SSOT:
   tokens, typography, fonts, spacing, radii, `signatures[]`, `donts[]`, `forbidden`, the microcopy
   layer, screens, decisions. **CAPTURE** = the directory holding it. Its prose authority is
   `CAPTURE/BRAND-FACTS.md`: if the two disagree, the prose wins and the lock is stale.
-- **SKILL** = `~/.claude/skills/producttank/` — this file, `tools/`, `references/`, `evals/`, `gauntlet/`.
+- **SKILL** = `~/.claude/skills/producttank/`: this file, `tools/`, `references/`, `evals/`, `gauntlet/`.
 
 Every engine call: `node ENGINE/scripts/<name>.mjs --lock LOCK [--screen <id>]`. Every skill tool:
 `node SKILL/tools/<name>.mjs --help` first.
 
-## 0. Blocking gate — no lock, no generation
+## 0. Blocking gate: no lock, no generation
 
-Lock missing/incomplete → STOP; run the capture flow (`ENGINE/references/spec-capture.md`,
+Lock missing or incomplete: STOP. Run the capture flow (`ENGINE/references/spec-capture.md`,
 then `CAPTURE/BRAND-FACTS.md` §0 for this brand's sources), reload, resume as a blocker. Never
 generate from memory of the Mind the Product brand. Never silently overwrite a lock
-(`capture-figma.mjs --merge`). Setup unverified → `ENGINE/scripts/setup-check.mjs`.
+(`capture-figma.mjs --merge`). Setup unverified: run `ENGINE/scripts/setup-check.mjs`.
 
 A second blocking gate is **facts**: a date, time, venue, speaker, sponsor or number that the
 brief and `BRAND-FACTS.md` §9 do not supply stays a typed slot or gets asked for. It is never
@@ -70,29 +70,29 @@ presentable shell). Which post when: `SKILL/references/playbook.md`. Deck workfl
    venn declaration (`data-venn`), the lockup and the markup count. A slot with no fact stays as
    the template's typed sample or is removed together with its row.
 4. Register the screen in the lock's `screens[]` (copy the template's entry, new `id` and `url`,
-   `netNew: true`) — never render a screen the lock does not know.
+   `netNew: true`): never render a screen the lock does not know.
 5. Run the gates (§7). Look at the PNG. Loop ≤ 4 rounds. Report (§8).
 
 **Brief discipline** (from a sibling slides skill): re-state the subject in every canvas instruction (each
 canvas is composed with no memory of the others); pick one density for the whole set (sparse /
 standard) and say it each time; say what the canvas MEANS, not how to build it.
 
-## 2. The composition rules — quoted, not paraphrased
+## 2. The composition rules, quoted, not paraphrased
 
 The lock's `signatures[]` (positive, must always be true) and `donts[]` (negative, must never
 happen) **are** the design system for this capture. They are reproduced verbatim below; the lock
 is the authority if these ever drift (the gauntlet's `docs` lane checks they match).
 
 **Signatures**
-1. "Every canvas carries the ProductTank lockup (wordmark + city + strapline), White or Midnight, left-aligned in the top-left or bottom-left corner" — `grep: data-slot="lockup"`
-2. "The strapline reads exactly 'a Mind the Product meetup', never reworded, never translated" — `grep: a Mind the Product meetup`
+1. "Every canvas carries the ProductTank lockup (wordmark + city + strapline), White or Midnight, left-aligned in the top-left or bottom-left corner": `grep: data-slot="lockup"`
+2. "The strapline reads exactly 'a Mind the Product meetup', never reworded, never translated": `grep: a Mind the Product meetup`
 3. "The ground is Bold Cyan (social default) or Midnight (stories, closing slides); Markup Yellow and Purple are never grounds" (Black `#060119` is the third allowed ground since DEC-010: slides and event-promo canvases)
 4. "Headlines are sentence case, Montserrat Bold (Cera Pro Bold when licensed), White on Bold Cyan or Midnight, at the display size of the format"
-5. "The key word of an announcement sits on one yellow Markup box in Midnight text; one markup gesture per canvas" — `grep: class="markup` on announce/reminder/call-for
-6. "A venn (one full circle, one target, one of donut/polo/eye/ring) or one or two Venniverse shapes anchor the composition; never two targets" — `grep: data-venn` on announce/spotlight/lineup/reminder
-7. "Facts (date, time, venue) sit in one facts row with the month spelled out, above or beside the headline, never buried in body copy" — `grep: data-slot="facts"` on announce/reminder/lineup
+5. "The key word of an announcement sits on one yellow Markup box in Midnight text; one markup gesture per canvas": `grep: class="markup` on announce/reminder/call-for
+6. "A venn (one full circle, one target, one of donut/polo/eye/ring) or one or two Venniverse shapes anchor the composition; never two targets": `grep: data-venn` on announce/spotlight/lineup/reminder
+7. "Facts (date, time, venue) sit in one facts row with the month spelled out, above or beside the headline, never buried in body copy": `grep: data-slot="facts"` on announce/reminder/lineup
 8. "Subject photography is a cut-out that bleeds off at least one edge and sits over the venn; textural photography is full-bleed with the tritone wash"
-9. "Every canvas declares its format and archetype on the root and sets data-render-ready only after fonts have loaded" — `grep: data-render-ready`
+9. "Every canvas declares its format and archetype on the root and sets data-render-ready only after fonts have loaded": `grep: data-render-ready`
 
 **Don'ts**
 1. "Do not change the colour of the logo or lockup: Midnight or White only (Brand Guide 2.2, 2.3)"
@@ -115,7 +115,7 @@ STRICT vs FREE, in one line: colours, fonts, the lockup, the markup count, the v
 copy rules are gated; which venn, where the photo goes, how big the type within the format's
 scale, the hook and the tone are yours.
 
-## 3. Route every region — Mode B2 today
+## 3. Route every region: Mode B2 today
 
 Every screen in this capture is **Mode B2**: no Figma geometry for the generated canvases, no
 `componentMap`. The Figma renders under `CAPTURE/reference/figma/` are tear-down and review
@@ -137,23 +137,23 @@ the venn or textural full-bleed with the wash. `ENGINE/references/mode-b.md` for
 Surface class: every canvas here is a fixed-size poster or slide (no interaction, no responsive
 behaviour); `ENGINE/references/surface-classes.md` applies only if a web surface is ever added.
 
-## 4. `<spec_adherence>` — declare before code
+## 4. `<spec_adherence>`: declare before code
 
 Before generating any canvas, emit the block: (1) TOKENS with exact values + source rung
 (`CAPTURE/assets/tokens.css` names); (2) COMPONENTS: which anatomy specs the regions bind to;
 (3) MEASUREMENTS px vs the tear-down sheet for the format; (4) TEXT SLOTS (element × context ×
 tone, and which facts fill them, with their source); (5) BANNED-DEVIATION SWEEP against §2. An
-unfillable line = capture gap or missing fact → back to §0, never improvise.
+unfillable line means a capture gap or a missing fact: back to §0, never improvise.
 
 ## 5. Generation rules
 
-Tokens only: colours through `var(--…)` from `assets/tokens.css` (raw hex outside `:root` fails
+Tokens only: colours through `var(--token)` from `assets/tokens.css` (raw hex outside `:root` fails
 lint; absolute white/black is a warning, still avoid it), spacing from the 8 px rhythm
 (`--space-*`), type roles from `assets/base.css` (`.headline .heading .subheading .body .body-sm
 .caption .label`; the per-format headline sizes live in `base.css`, do not override them with
 new numbers), fonts only via `fonts/fonts.css`. Structure: `<main class="canvas"
-data-format="…" data-archetype="…">`, layers in order shapes (0) → photo (1) → copy (2) →
-lockup (3); `data-render-ready` set after `document.fonts.ready`; `data-fig-id` where a captured
+data-format="<format>" data-archetype="<archetype>">`, layers in order shapes (0), then photo (1), then copy (2),
+then lockup (3); `data-render-ready` set after `document.fonts.ready`; `data-fig-id` where a captured
 node exists. Typed flexible slots, ≥ 2 lines slack, no fixed text widths beyond the copy column.
 The lockup is an `<img>` from `assets/logo/` (DEC-001, DEC-012: the community is always written "ProductTank Brussels", never "ProductTank Belgium"), 380 px on 1080-wide canvases, 300 on
 1200×628, 480 on stories, 420 on slides; never live text. Never reproduce Figma export artifacts
@@ -175,20 +175,20 @@ is delivered beside the canvas, never baked into it. Patterns and the 4-pass edi
 `ENGINE/references/microcopy-patterns.md`, `microcopy-voice.md`. Disclosures are `⚠ Legal`,
 never paraphrased or cut.
 
-## 7. Ship gates — fixed order
+## 7. Ship gates, fixed order
 
 Run from `CAPTURE` (the lock's directory):
 
-1. **Content/compliance lint** — `node ENGINE/scripts/adherence-lint.mjs --lock design-lock.json --src templates`
+1. **Content/compliance lint**: `node ENGINE/scripts/adherence-lint.mjs --lock design-lock.json --src templates`
    then the brand linter `node SKILL/tools/pt-lint.mjs --lock design-lock.json --src <file|dir>`
    (16 rules: lockup presence/colour/corner/width, one markup, ground, venn recipe, one target,
    sentence case, PM, brand names, dates, disclosures, URLs, strapline). An ERROR blocks
    regardless of looks.
-2. **Taste self-critique** (yours): Philosophy-alignment / Hierarchy / Craft / Functionality, 0–10
-   with cited evidence; any ≤ 4 → redo. Check every signature. Run the **brand-transplant test**:
-   swap Bold Cyan, the lockup and the venn for a competitor's marks — does anything else still
+2. **Taste self-critique** (yours): Philosophy-alignment / Hierarchy / Craft / Functionality, 0to10
+   with cited evidence; any score of 4 or less means redo. Check every signature. Run the **brand-transplant test**:
+   swap Bold Cyan, the lockup and the venn for a competitor's marks: does anything else still
    say ProductTank? If not, lean on the signatures, never on off-system invention.
-3. **Render + geometry + pixel + census** — `node ENGINE/scripts/verify.mjs --lock design-lock.json --screen <id>`
+3. **Render + geometry + pixel + census**: `node ENGINE/scripts/verify.mjs --lock design-lock.json --screen <id>`
    (font parity asserted before any screenshot: Montserrat missing = exit 4). For batches and
    decks: `node SKILL/tools/render-batch.mjs --lock design-lock.json --src <dir|file>` or
    `--deck templates/slides` (PNG per slide + `deck.pdf`), then
@@ -242,6 +242,6 @@ per hard rule; every fixture in `files` must exist (gauntlet lane `evals-files`)
 
 The lock is the only authority; the prose authority is BRAND-FACTS.md. Never invent an off-lock
 value, a fact, or a photo. Never retype, recolour or reposition the lockup. Never exceed a
-threshold cap. References come from Figma's renderer or an owner-approved render — never your own
+threshold cap. References come from Figma's renderer or an owner-approved render: never your own
 render armed by yourself. Disclosures are never cut. Report failures faithfully, name every gate
 that did not run, and ship net-new work as concept-ready.
