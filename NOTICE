@@ -1,0 +1,25 @@
+ProductTank (the ProductTank Brussels brand skill)
+Copyright 2026 Tudor Juravlea
+
+Licensed under the Apache License, Version 2.0 (see LICENSE). The licence covers the code,
+the templates, the documentation, the component anatomy, the derived shape drawings and the
+design lock in this repository.
+
+Trademarks and brand assets, not covered by the licence:
+- "ProductTank" and "Mind the Product" are trademarks of Mind the Product (Pendo.io, Inc.).
+  This repository is an organiser's tool and is not affiliated with, endorsed by or maintained by
+  Mind the Product.
+- The ProductTank city lockups, the Mind the Product wordmark, Mind the Product's photography
+  and its official venn and markup drawings are NOT included. The files under assets/logo/ are
+  typed placeholders drawn for this repository; organisers replace them with the files Mind the
+  Product provides in its ProductTank logo repository (see assets/logo/README.md).
+- The brand facts recorded here (colour values, type sizes, layout rules) describe Mind the
+  Product's Brand Guide for the purpose of following it; the guide itself is Mind the Product's.
+
+Fonts:
+- Montserrat (fonts/), Copyright 2011 The Montserrat Project Authors, licensed under the SIL Open
+  Font License, Version 1.1 (fonts/LICENSE-OFL.txt). Cera Pro, the brand's typeface, is not
+  included; see captures/producttank/BRAND-FACTS.md §2.
+
+This skill runs on fidelity-machine, Copyright 2026 Tudor Juravlea, Apache-2.0
+(https://github.com/tudorjuravlea/fidelity-machine), installed separately.

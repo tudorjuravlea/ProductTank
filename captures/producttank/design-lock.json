@@ -1,0 +1,1135 @@
+{
+  "meta": {
+    "name": "producttank",
+    "capturedAt": "2026-09-07",
+    "chromiumBuild": "chromium-1228",
+    "provenance": {
+      "generatedAt": "2026-09-07T21:57:56.453Z",
+      "lockTokensHash": "sha256:7d29f565463b7a38919ee07aa14588f1004e7f48088703ca622137fb2937d27d",
+      "artifacts": {
+        "assets/tokens.css": "sha256:dfde7de7f23d6768be72eb0b62b1dcbba532f41185dd13ed9c88628fd7ce02ac",
+        "assets/tailwind.tokens.cjs": "sha256:ed6da71fe6394000ad2346acdcf34f70b46ee06ab57fa68add9a04e7479140b7",
+        "assets/tokens.dtcg.json": "sha256:f218ea53eb657da75508a58c70ecae959938a5a69d7245320332b849dfce8d04",
+        "fonts/Montserrat-latin.woff2": "sha256:6438d7b8ea9c7c3992d5e2fd2afdb1ff948570a3ef0bedae76247b51632960ba",
+        "fonts/Montserrat-latin-ext.woff2": "sha256:920711de9ae96c18970fa4faca73cd302b93ac5ed57ebeb6bfec2ddeff930082",
+        "fonts/Montserrat-italic-latin.woff2": "sha256:86589d0b59b311712c3cbaac0b94eb054ecda4be7b52d695588548e4754b3165",
+        "fonts/Montserrat-italic-latin-ext.woff2": "sha256:30cf10b2e32e189a39ee3ae4e241ab281c5224046d673ad7f767758ce62f6eff"
+      }
+    }
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "background": "#126CFF",
+        "bold-cyan": "#126CFF",
+        "zingy-cyan": "#21CCFA",
+        "purple": "#8B4BEF",
+        "blurple": "#4546E0",
+        "markup-yellow": "#ECF023",
+        "midnight": "#17044A",
+        "mid-gray": "#C6C1DB",
+        "light-gray": "#EFEEF2",
+        "white": "#FFFFFF",
+        "surface1": "#FFFFFF",
+        "surface2": "#EFEEF2",
+        "text1": "#FFFFFF",
+        "text2": "#EFEEF2",
+        "ink": "#17044A",
+        "accent": "#21CCFA",
+        "accent2": "#4546E0",
+        "accent3": "#8B4BEF",
+        "action": "#ECF023",
+        "border": "#C6C1DB",
+        "black": "#060119",
+        "ground-black": "#060119"
+      },
+      "dark": {
+        "background": "#17044A",
+        "bold-cyan": "#126CFF",
+        "zingy-cyan": "#21CCFA",
+        "purple": "#8B4BEF",
+        "blurple": "#4546E0",
+        "markup-yellow": "#ECF023",
+        "midnight": "#17044A",
+        "mid-gray": "#C6C1DB",
+        "light-gray": "#EFEEF2",
+        "white": "#FFFFFF",
+        "surface1": "#FFFFFF",
+        "surface2": "#EFEEF2",
+        "text1": "#FFFFFF",
+        "text2": "#C6C1DB",
+        "ink": "#17044A",
+        "accent": "#21CCFA",
+        "accent2": "#4546E0",
+        "accent3": "#8B4BEF",
+        "action": "#ECF023",
+        "border": "#C6C1DB",
+        "black": "#060119",
+        "ground-black": "#060119"
+      }
+    },
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      40,
+      48,
+      52,
+      56,
+      64,
+      72,
+      80,
+      84,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200,
+      208,
+      216,
+      224,
+      232,
+      240,
+      248,
+      256,
+      264,
+      272,
+      280,
+      288,
+      296,
+      304,
+      312,
+      320,
+      328,
+      336,
+      344,
+      352,
+      360,
+      368,
+      376,
+      384,
+      392,
+      400,
+      408,
+      416,
+      424,
+      432,
+      440,
+      448,
+      456,
+      464,
+      472,
+      480,
+      488,
+      496,
+      504,
+      512,
+      520,
+      528,
+      536,
+      544,
+      552,
+      560,
+      568,
+      576,
+      584,
+      592,
+      600,
+      608,
+      616,
+      624,
+      632,
+      640,
+      648,
+      656,
+      664,
+      672,
+      680,
+      688,
+      696,
+      704,
+      712,
+      720,
+      728,
+      736,
+      744,
+      752,
+      760,
+      768,
+      776,
+      784,
+      792,
+      800,
+      808,
+      816,
+      824,
+      832,
+      840,
+      848,
+      856,
+      864,
+      872,
+      880,
+      888,
+      896,
+      904,
+      912,
+      920,
+      928,
+      936,
+      944,
+      952,
+      960,
+      968,
+      976,
+      984,
+      992,
+      1000,
+      1008,
+      1016,
+      1024
+    ],
+    "radii": {
+      "pill": 999,
+      "card": 24,
+      "tile": 12,
+      "control": 8,
+      "none": 0
+    },
+    "typography": {
+      "display": {
+        "family": "Montserrat",
+        "sizePx": 100,
+        "weight": 700,
+        "lineHeight": 1.1,
+        "letterSpacingEm": -0.01
+      },
+      "heading": {
+        "family": "Montserrat",
+        "sizePx": 64,
+        "weight": 700,
+        "lineHeight": 1.05
+      },
+      "subheading": {
+        "family": "Montserrat",
+        "sizePx": 36,
+        "weight": 500,
+        "lineHeight": 1.2
+      },
+      "body": {
+        "family": "Montserrat",
+        "sizePx": 28,
+        "weight": 400,
+        "lineHeight": 1.35
+      },
+      "body-sm": {
+        "family": "Montserrat",
+        "sizePx": 22,
+        "weight": 400,
+        "lineHeight": 1.35
+      },
+      "caption": {
+        "family": "Montserrat",
+        "sizePx": 18,
+        "weight": 500,
+        "lineHeight": 1.3
+      },
+      "label": {
+        "family": "Montserrat",
+        "sizePx": 16,
+        "weight": 700,
+        "lineHeight": 1.2,
+        "letterSpacingEm": 0.06
+      }
+    },
+    "elevation": {
+      "card": "0 1px 2px rgba(0,0,0,0.15)",
+      "none": "none"
+    }
+  },
+  "componentMap": {},
+  "fonts": [
+    {
+      "family": "Montserrat",
+      "files": [
+        "fonts/Montserrat-latin.woff2",
+        "fonts/Montserrat-latin-ext.woff2",
+        "fonts/Montserrat-italic-latin.woff2",
+        "fonts/Montserrat-italic-latin-ext.woff2"
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "fontChecks": [
+        "700 64px \"Montserrat\"",
+        "400 28px \"Montserrat\"",
+        "500 28px \"Montserrat\""
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "id": "call-for-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/call-for-portrait.html",
+      "stateContract": "call-for template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=call-for format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "call-for-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/call-for-square.html",
+      "stateContract": "call-for template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=call-for format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "demo-linkedin-cover-2026-10-08",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 2256,
+      "captureHeight": 382,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "../../demos/2026-10-08/linkedin-cover-2026-10-08.html",
+      "stateContract": "demo: LinkedIn page cover for 8 October with two typed speaker slots (portrait, name, role, company); time and venue not supplied",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-announce format=linkedin-cover; demo, not a shipped template"
+    },
+    {
+      "id": "demo-linkedin-post-2026-10-08",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "../../demos/2026-10-08/linkedin-post-2026-10-08.html",
+      "stateContract": "demo: LinkedIn feed post (lineup portrait) for 8 October with two typed speaker slots; time and venue not supplied",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=lineup format=social-portrait; demo"
+    },
+    {
+      "id": "demo-opening-slide-2026-10-08",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "../../demos/2026-10-08/opening-slide-2026-10-08.html",
+      "stateContract": "demo: opening slide (Today's speakers layout) for 8 October with two typed speaker slots",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-panel format=slide; demo"
+    },
+    {
+      "id": "event-announce-landscape",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1200,
+      "captureHeight": 628,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/event-announce-landscape.html",
+      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-announce format=social-landscape; tear-down reference: reference/figma/mtp-producttank-social-1200x628.png"
+    },
+    {
+      "id": "event-announce-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/event-announce-portrait.html",
+      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-announce format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "event-announce-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/event-announce-square.html",
+      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-announce format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "event-announce-story",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1920,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/event-announce-story.html",
+      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-announce format=story; tear-down reference: reference/figma/mtp_story_producttank_worldproductday_1200.png"
+    },
+    {
+      "id": "event-banner-1600x900",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1600,
+      "captureHeight": 900,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/event-banner-1600x900.html",
+      "stateContract": "event-banner template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-banner format=event-banner; tear-down reference: reference/figma/mtp-producttank-slidecover.png"
+    },
+    {
+      "id": "event-promo-landscape",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1200,
+      "captureHeight": 628,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/event-promo-landscape.html",
+      "stateContract": "event-promo template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-promo format=social-landscape; tear-down reference: reference/figma/mtp-producttank-social-1200x628.png"
+    },
+    {
+      "id": "event-promo-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/event-promo-portrait.html",
+      "stateContract": "event-promo template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-promo format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "lineup-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/lineup-portrait.html",
+      "stateContract": "lineup template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=lineup format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "lineup-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/lineup-square.html",
+      "stateContract": "lineup template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=lineup format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "linkedin-cover",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 2256,
+      "captureHeight": 382,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/linkedin-cover.html",
+      "stateContract": "linkedin-cover template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=linkedin-cover format=linkedin-cover; tear-down reference: reference/figma/mtp-producttank-linkedin_cover_image.png"
+    },
+    {
+      "id": "quote-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/quote-portrait.html",
+      "stateContract": "quote template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=quote format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "recap-thanks-landscape",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1200,
+      "captureHeight": 628,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/recap-thanks-landscape.html",
+      "stateContract": "recap-thanks template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=recap-thanks format=social-landscape; tear-down reference: reference/figma/mtp-producttank-social-1200x628.png"
+    },
+    {
+      "id": "recap-thanks-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/recap-thanks-portrait.html",
+      "stateContract": "recap-thanks template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=recap-thanks format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "reminder-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/reminder-portrait.html",
+      "stateContract": "reminder template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=reminder format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "reminder-story",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1920,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/reminder-story.html",
+      "stateContract": "reminder template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=reminder format=story; tear-down reference: reference/figma/mtp_story_producttank_worldproductday_1200.png"
+    },
+    {
+      "id": "slide-agenda",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/agenda.html",
+      "stateContract": "slide layout 'agenda' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-agenda format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-closing",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/closing.html",
+      "stateContract": "slide layout 'closing' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-closing format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-community",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/community.html",
+      "stateContract": "slide layout 'community' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-community format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-cover",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/slides/cover.html",
+      "stateContract": "slide layout 'cover' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-cover format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-host-sponsor",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/host-sponsor.html",
+      "stateContract": "slide layout 'host-sponsor' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-host-sponsor format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-panel",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/panel.html",
+      "stateContract": "slide layout 'panel' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-panel format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-speaker",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/speaker.html",
+      "stateContract": "slide layout 'speaker' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-speaker format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-talk-title",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/talk-title.html",
+      "stateContract": "slide layout 'talk-title' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-talk-title format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "slide-welcome",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1920,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/slides/welcome.html",
+      "stateContract": "slide layout 'welcome' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=slide-welcome format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render"
+    },
+    {
+      "id": "speaker-spotlight-landscape",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1200,
+      "captureHeight": 628,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/speaker-spotlight-landscape.html",
+      "stateContract": "speaker-spotlight template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=speaker-spotlight format=social-landscape; tear-down reference: reference/figma/mtp-producttank-social-1200x628.png"
+    },
+    {
+      "id": "speaker-spotlight-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/speaker-spotlight-portrait.html",
+      "stateContract": "speaker-spotlight template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=speaker-spotlight format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "stat-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/stat-square.html",
+      "stateContract": "stat template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=stat format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    }
+  ],
+  "caps": {
+    "maxPassThreshold": {
+      "A": 0.002,
+      "B1": 0.005,
+      "B2": 0.005
+    },
+    "maxTileCeiling": 0.4,
+    "maxMaskedAreaPct": 0.15
+  },
+  "signatures": [
+    {
+      "rule": "Every canvas carries the ProductTank lockup (wordmark + city + strapline), White or Midnight, left-aligned in the top-left or bottom-left corner",
+      "grep": "data-slot=\"lockup\""
+    },
+    {
+      "rule": "The strapline reads exactly 'a Mind the Product meetup', never reworded, never translated",
+      "grep": "a Mind the Product meetup"
+    },
+    {
+      "rule": "The ground is Bold Cyan (social default) or Midnight (stories, closing slides); Markup Yellow and Purple are never grounds"
+    },
+    {
+      "rule": "Headlines are sentence case, Montserrat Bold (Cera Pro Bold when licensed), White on Bold Cyan or Midnight, at the display size of the format"
+    },
+    {
+      "rule": "The key word of an announcement sits on one yellow Markup box in Midnight text; one markup gesture per canvas",
+      "grep": "class=\"markup",
+      "when": "data-archetype=\"(event-announce|reminder|call-for)\""
+    },
+    {
+      "rule": "A venn (one full circle, one target, one of donut/polo/eye/ring) or one or two Venniverse shapes anchor the composition; never two targets",
+      "grep": "data-venn",
+      "when": "data-archetype=\"(event-announce|speaker-spotlight|lineup|reminder)\""
+    },
+    {
+      "rule": "Facts (date, time, venue) sit in one facts row with the month spelled out, above or beside the headline, never buried in body copy",
+      "grep": "data-slot=\"facts\"",
+      "when": "data-archetype=\"(event-announce|reminder|lineup)\""
+    },
+    {
+      "rule": "Subject photography is a cut-out that bleeds off at least one edge and sits over the venn; textural photography is full-bleed with the tritone wash",
+      "when": "data-slot=\"photo\""
+    },
+    {
+      "rule": "Every canvas declares its format and archetype on the root and sets data-render-ready only after fonts have loaded",
+      "grep": "data-render-ready"
+    }
+  ],
+  "donts": [
+    "Do not change the colour of the logo or lockup: Midnight or White only (Brand Guide 2.2, 2.3)",
+    "Do not add text, a drop shadow, a reflection, an outline, a rotation, a distortion or a venn to the logo, and never retype it (2.2)",
+    "Do not place the lockup centred or on the right; never smaller than 80 px wide; keep clear space equal to the height of the P (2.3)",
+    "Do not use Markup Yellow as a background field or as the primary colour of a composition; it is for markup gestures, CTAs and tags only (4.2, 6.5)",
+    "Do not set coloured text: text is White or Midnight (Black on a markup is allowed); no gradient text, no cyan text on cyan (6.1)",
+    "Do not use more than one target circle; do not mask photographs with the venn; do not combine only low-contrast colours (5.4)",
+    "Do not stack the text highlight; it is one row of two related facts in bold caps (6.1)",
+    "No UPPER CASE or Capitalised Headings: headings are sentence case; caps live only in the label pill and the text highlight (3.2)",
+    "No legacy palette: the pre-2024 cyan set (#009EE3, #192844, #92EAFF, #DDEEEE, #007EB6, #EFF6F7, #8B98A7, #FA6969) and the 2023 slide theme (#7E57FF, #FDAF53, #092232, #442A30, #EDFE37, #C4BFB2) are forbidden (DEC-003)",
+    "No 'PM' or 'PMs': the audience is product people; brand names are spelled Mind the Product and ProductTank (1.3)",
+    "No invented facts: dates, venues, speaker names, sponsor names and numbers come from the brief or BRAND-FACTS §9, or the slot stays typed (DEC-006)",
+    "No URLs baked into a canvas: the post or the Meetup page carries the link (playbook)",
+    "No em dashes, no lorem ipsum, no glassmorphism or backdrop blur, no gradients except the tritone photo wash (Midnight > Bold Cyan > Zingy Cyan)",
+    "No AI-default typefaces (Inter, Roboto, Poppins, Space Grotesk, Arial as a display face) and no script or brush lettering",
+    "Do not reuse the photography inside the Figma reference renders; it is Mind the Product's imagery, not this community's (DEC-007)"
+  ],
+  "forbidden": {
+    "fontFamilies": [
+      "Inter",
+      "Roboto",
+      "Poppins",
+      "Space Grotesk",
+      "Open Sans",
+      "Sora",
+      "Comic Neue",
+      "Helvetica Neue",
+      "Arial",
+      "Satoshi",
+      "Manrope",
+      "DM Sans"
+    ],
+    "hexColors": [
+      "#009EE3",
+      "#192844",
+      "#92EAFF",
+      "#DDEEEE",
+      "#007EB6",
+      "#EFF6F7",
+      "#8B98A7",
+      "#FA6969",
+      "#7E57FF",
+      "#FDAF53",
+      "#092232",
+      "#442A30",
+      "#EDFE37",
+      "#C4BFB2",
+      "#0A1740",
+      "#00B2FF",
+      "#2F6DF6",
+      "#F761F7"
+    ]
+  },
+  "content": {
+    "voiceChart": [
+      {
+        "concept": "Welcoming",
+        "characteristics": [
+          "open",
+          "warm",
+          "for every product person"
+        ],
+        "do": "Whatever your role in product, you are welcome. Free to attend, as always.",
+        "dont": "Exclusive evening for senior PMs only."
+      },
+      {
+        "concept": "Curious",
+        "characteristics": [
+          "questions",
+          "learning from success and failure"
+        ],
+        "do": "What did shipping to 2 million users teach Sofie about saying no? Come and find out.",
+        "dont": "Learn the 5 secret hacks every PM must know."
+      },
+      {
+        "concept": "Moxie",
+        "characteristics": [
+          "humour",
+          "puns allowed",
+          "never authoritative"
+        ],
+        "do": "Two talks, one room, zero slides about synergy.",
+        "dont": "The definitive guide to product management, presented by experts."
+      },
+      {
+        "concept": "Clear and specific",
+        "characteristics": [
+          "one message",
+          "one call to action",
+          "facts first"
+        ],
+        "do": "Tuesday 14 October, 18:30, at Venue name. RSVP on Meetup.",
+        "dont": "Join us soon for an amazing event, details to follow, link in bio, don't miss out!"
+      },
+      {
+        "concept": "Connected",
+        "characteristics": [
+          "community",
+          "credit the people"
+        ],
+        "do": "Thanks to our host and to everyone who stayed for the networking.",
+        "dont": "Another successful event delivered by the organising committee."
+      }
+    ],
+    "locales": [
+      "en"
+    ],
+    "formats": {
+      "decimal": ".",
+      "thousands": " ",
+      "currencyMicrocopy": "€",
+      "currencyLegal": "EUR",
+      "date": "D Month YYYY",
+      "time": "24h"
+    },
+    "bannedJargon": {
+      "en": [
+        {
+          "term": "ProductTank Belgium",
+          "replacement": "ProductTank Brussels"
+        },
+        {
+          "term": "PMs",
+          "replacement": "product people"
+        },
+        {
+          "term": "PM",
+          "replacement": "product manager"
+        },
+        {
+          "term": "Product Tank",
+          "replacement": "ProductTank"
+        },
+        {
+          "term": "meet-up",
+          "replacement": "meetup"
+        },
+        {
+          "term": "Meet-up",
+          "replacement": "Meetup"
+        },
+        {
+          "term": "synergy",
+          "replacement": "working together"
+        },
+        {
+          "term": "link in bio",
+          "replacement": "RSVP on Meetup"
+        }
+      ]
+    },
+    "disclosureInventory": [
+      {
+        "flow": "event-announce-portrait",
+        "mustContain": [
+          "Free to attend",
+          "Meetup"
+        ]
+      },
+      {
+        "flow": "event-announce-square",
+        "mustContain": [
+          "Free to attend",
+          "Meetup"
+        ]
+      },
+      {
+        "flow": "event-announce-landscape",
+        "mustContain": [
+          "Free to attend",
+          "Meetup"
+        ]
+      },
+      {
+        "flow": "event-announce-story",
+        "mustContain": [
+          "Free to attend",
+          "Meetup"
+        ]
+      },
+      {
+        "flow": "reminder-portrait",
+        "mustContain": [
+          "Meetup"
+        ]
+      },
+      {
+        "flow": "reminder-story",
+        "mustContain": [
+          "Meetup"
+        ]
+      }
+    ],
+    "diacritics": true
+  },
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "date": "2026-09-07",
+      "scope": "global",
+      "decision": "The city lockup is ProductTank Brussels (MTP's official file). The community is named 'ProductTank Belgium' in copy, never as a lockup. DEPRECATED 2026-09-07 evening: the copy clause is replaced by DEC-012 (always \"ProductTank Brussels\").",
+      "rationale": "Owner ruling 2026-09-07: keep the Brussels logo and say 'ProductTank Belgium' in the text. No official Belgium file exists; the guide sets city names in Cera Pro Regular.",
+      "status": "deprecated"
+    },
+    {
+      "id": "DEC-002",
+      "date": "2026-09-07",
+      "scope": "tokens.typography",
+      "decision": "Montserrat (OFL, variable) is the shipped face. Cera Pro is a licensed drop-in: add the woff2 files, edit fonts[] and typography families, re-derive.",
+      "rationale": "Brand Guide 3.1 names Montserrat as the organiser alternative and MTP's own 2026 organiser templates say 'Please use Montserrat ONLY'. Owner ruling 2026-09-07: Montserrat at the closest optical size (per-format headline sizes in base.css).",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-003",
+      "date": "2026-09-07",
+      "scope": "forbidden",
+      "decision": "The pre-2024 cyan palette and the 2023 slide-template theme are forbidden hexes.",
+      "rationale": "Both still exist in the 2026 resources file and in the master deck; Brand Guide 4.2 unified everything under the 2024 palette.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-004",
+      "date": "2026-09-07",
+      "scope": "screens",
+      "decision": "Formats use MTP's own template sizes where a reference exists; the square ships at 1080x1080 (source 1000x1000); slides are 1920x1080 HTML with PNG, PDF and image-PPTX export.",
+      "rationale": "Current platform sizes; deterministic browser rendering; the official Google Slides template stays the editable source.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-005",
+      "date": "2026-09-07",
+      "scope": "reference",
+      "decision": "Figma renders are tear-down and review references only. A pixel-diff reference is armed solely from a render the owner approved (tools/arm-reference.mjs), never self-seeded.",
+      "rationale": "The renders were set in Cera Pro; comparing Montserrat output to them measures the font, not the drift. CONTRACT provenance rule and a sibling skill's armed-reference policy.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-006",
+      "date": "2026-09-07",
+      "scope": "content",
+      "decision": "No community fact is invented. Announcements must carry 'Free to attend' and a Meetup mention; every date spells out the month.",
+      "rationale": "MTP organiser rules (free events, registration on Meetup.com) and Brand Guide 1.3; the standing zero-facts rule.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-007",
+      "date": "2026-09-07",
+      "scope": "imagery",
+      "decision": "Subject photos are cut-outs bleeding off an edge over a venn; textural photos are full-bleed with the tritone wash; the venn never masks a photo; MTP's reference photography is never reused.",
+      "rationale": "Brand Guide 5.4 and 6.2; the reference imagery is not this community's to redistribute.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-008",
+      "date": "2026-09-07",
+      "scope": "tokens.colors",
+      "decision": "Markup Yellow is #ECF023 (Brand Guide 4.1). #EBEF23 as drawn in the file's markup shapes is the same colour, not a second token. Venn circles and markup strokes are authored to the guide's recipe until the official SVGs arrive in Figma pass 2. WITHDRAWN 2026-09-07 evening: the official component SVGs arrived in Figma pass 2 (DEC-009).",
+      "rationale": "One token per colour; the API cap blocked the component exports on 2026-09-07.",
+      "status": "withdrawn"
+    },
+    {
+      "id": "DEC-009",
+      "date": "2026-09-07",
+      "scope": "assets/shapes",
+      "decision": "The six venn circles and the markup gestures are MTP's official component exports (Figma pass 2 via the owner's copy of the file), converted to currentColor. The hand-drawn box behind a word stays a derived mask (no official component exists for it). Derived files are kept as *.derived.svg for the record.",
+      "rationale": "Captured assets beat derived ones (imagery policy Tier 1).",
+      "status": "approved",
+      "supersedes": "DEC-008"
+    },
+    {
+      "id": "DEC-010",
+      "date": "2026-09-07",
+      "scope": "tokens.colors",
+      "decision": "Black #060119 joins the neutrals as a ground for slides and event-promo canvases and as the guide's body-text colour; Bold Cyan stays the social default, Midnight the story ground.",
+      "rationale": "MTP's 2026 organiser slide template and the 1200x675 social template use #060119 as their ground (432 and 25 fills); the Brand Guide's own body text is #060119.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-011",
+      "date": "2026-09-07",
+      "scope": "components",
+      "decision": "The speaker element is a circular photo with three lines: name (bold), role, '@ Company'. The event-promo canvas is the organiser template: dark ground, lockup top-left, date|time highlight, title, location line, a white sponsor-logo box, speakers or a venn on the right.",
+      "rationale": "MTP's organiser templates (Assets/Social Templates 2024, Slide Template 2026) use exactly this element on every speaker and WPD canvas.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-012",
+      "date": "2026-09-07",
+      "scope": "content",
+      "decision": "The community is always written 'ProductTank Brussels', in copy as in the lockup. 'ProductTank Belgium' is never written on a canvas, in a caption or on a slide.",
+      "rationale": "Owner ruling 2026-09-07 evening: 'Let's always write Brussels not Belgium.' Matches the official lockup and MTP's one-city naming.",
+      "status": "approved",
+      "supersedes": "DEC-001"
+    }
+  ],
+  "imagery": {
+    "policy": [
+      "Tier 1: captured assets first. Lockups from assets/logo (<img src> or inline <svg data-fig-name>), never redrawn or retyped.",
+      "Tier 2: derived compositions declared with data-derived-art: venn circles per Brand Guide 5.2 (full, donut, polo, eye, target, ring), Venniverse shapes, markup strokes per 6.5.",
+      "Photography: subject cut-outs bleed off an edge and sit over the venn; textural photography is full-bleed with the Midnight > Bold Cyan > Zingy Cyan tritone wash; supplied by the brief (event photos, speaker headshots with consent), never taken from the Figma reference renders.",
+      "No abstract motif outside the venn, Venniverse and markup families; no stock illustration; icons are Feather/Lucide outlines at 3 px stroke when needed."
+    ],
+    "sizeClasses": {
+      "lockup-min-width-px": 80,
+      "markup-max-per-canvas": 1,
+      "venn-target-max": 1,
+      "venniverse-shapes-max": 2
+    },
+    "provenance": {
+      "logos": "placeholders drawn for this repository; the city lockup comes from Mind the Product (assets/logo/README.md)",
+      "shapes": "drawn for this repository to the Brand Guide recipe",
+      "references": "not included"
+    },
+    "audit": "2026-09-07: 8 logo files, 27 reference renders; no photography shipped"
+  }
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ProductTank Brussels deck</title>
+<style>
+html,body{margin:0;height:100%;background:#000;overflow:hidden}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+iframe{border:0;width:1920px;height:1080px;transform-origin:center center;background:#000}
+.hud{position:fixed;left:12px;bottom:12px;color:#fff;font:14px/1 -apple-system,sans-serif;opacity:.5}
+@media print{html,body{overflow:visible;background:#fff}.stage{position:static;display:block}.hud{display:none}iframe{display:block;transform:none!important;page-break-after:always}}
+</style></head><body>
+<div class="stage"><iframe id="f" src="cover.html" title="slide"></iframe></div>
+<div class="hud" id="hud"></div>
+<script>
+const slides = ["cover.html","welcome.html","agenda.html","speaker.html","talk-title.html","panel.html","host-sponsor.html","community.html","closing.html"];
+let i = Math.max(0, slides.indexOf(location.hash.slice(1)));
+const f = document.getElementById('f'), hud = document.getElementById('hud');
+function fit(){ const s = Math.min(innerWidth/1920, innerHeight/1080); f.style.transform = 'scale(' + s + ')'; }
+function go(n){ i = (n + slides.length) % slides.length; f.src = slides[i]; location.hash = slides[i]; hud.textContent = (i+1) + ' / ' + slides.length + '  ' + slides[i]; }
+addEventListener('resize', fit); fit(); go(i);
+addEventListener('keydown', (e) => { if (['ArrowRight','PageDown',' '].includes(e.key)) go(i+1); if (['ArrowLeft','PageUp'].includes(e.key)) go(i-1); if (e.key === 'Home') go(0); if (e.key === 'End') go(slides.length-1); });
+</script>
+<!-- Present: open this file in a browser, press F for fullscreen, arrows to navigate. Export: node tools/render-batch.mjs --lock <lock> --deck templates/slides (PNG per slide + deck.pdf). -->
+</body></html>

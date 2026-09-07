@@ -1,0 +1,23 @@
+name: gates
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  gauntlet:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install the engine (fidelity-machine) and its pinned Chromium
+        run: |
+          git clone --depth 1 https://github.com/tudorjuravlea/fidelity-machine "$HOME/fidelity-machine"
+          cd "$HOME/fidelity-machine" && npm install && npx playwright install chromium
+          mkdir -p "$HOME/.claude" && ln -s "$HOME/fidelity-machine" "$HOME/.claude/fidelity-engine"
+          node scripts/setup-check.mjs
+      - name: Lock contract
+        run: cd captures/producttank && node "$HOME/.claude/fidelity-engine/scripts/contract-guard.mjs" --lock design-lock.json
+      - name: Gauntlet (lint fixtures, engine lint, portability, docs, evals, renders)
+        run: node gauntlet/gauntlet.mjs

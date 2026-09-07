@@ -1,0 +1,10 @@
+{
+  "$comment": "Format presets for the ProductTank capture. Not part of the engine lock (its schema has no formats key); tools/render-batch.mjs and the templates read this file. Sizes are MTP's own template sizes where a reference exists (DEC-004).",
+  "social-portrait":  { "width": 1080, "height": 1350, "use": "LinkedIn / Instagram feed post (default)", "reference": "reference/figma/mtp-producttank-social-1080x1350.png" },
+  "social-square":    { "width": 1080, "height": 1080, "use": "Instagram, Meetup square, WhatsApp", "reference": "reference/figma/mtp-producttank-social-1000x1000.png", "note": "source is 1000x1000; shipped at 1080 (scale 1.08)" },
+  "social-landscape": { "width": 1200, "height": 628,  "use": "LinkedIn link card, Facebook, Meetup event photo", "reference": "reference/figma/mtp-producttank-social-1200x628.png" },
+  "story":            { "width": 1080, "height": 1920, "use": "Instagram / LinkedIn stories, WhatsApp status; keep content out of the top 250 px and bottom 300 px", "reference": "reference/figma/mtp_story_producttank_worldproductday_1200.png" },
+  "event-banner":     { "width": 1600, "height": 900,  "use": "LinkedIn event / Meetup cover, deck cover", "reference": "reference/figma/mtp-producttank-slidecover.png" },
+  "linkedin-cover":   { "width": 2256, "height": 382,  "use": "LinkedIn page cover (2x of 1128x191)", "reference": "reference/figma/mtp-producttank-linkedin_cover_image.png" },
+  "slide":            { "width": 1920, "height": 1080, "use": "deck slides (16:9)", "reference": null }
+}

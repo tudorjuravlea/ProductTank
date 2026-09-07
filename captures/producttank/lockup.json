@@ -1,0 +1,4 @@
+{
+  "$comment": "Which lockup file the templates use: assets/logo/<file>-white.svg and -midnight.svg. The placeholder ships; set this to producttank-<city> once your city files are in assets/logo/ (README).",
+  "file": "producttank-placeholder"
+}
