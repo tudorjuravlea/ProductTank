@@ -15,6 +15,9 @@ INFERRED (derived from the Brand Guide's rules). Selection by intent:
 | two related facts in one row ("14 October | 18:30") | `text-highlight.md` | Bold Cyan + White cells |
 | a person or place | `photo-cutout.md` | subject cut-out bleeding off an edge, over the venn |
 | a number with a caption | `stat.md` | numbers carousel pattern |
+| a speaker tease, a team intro, a carousel cover, three speakers in columns, a square promo with a host, an evergreen LinkedIn cover | `chapter-layouts.md` | six compositions learned from other chapters' posts (DEC-015) |
+| a statement with a payoff, a hero number, a milestone counter, a talk card, an agenda ladder, twin countdown numbers, explainer blocks, a name badge | `programme-layouts.md` | eight compositions rebuilt from a sibling community skill (DEC-016) |
+| a post that looks like the Meetup event page ("Attend on Meetup") | `meetup-card.md` | Light Gray frame around the Midnight event card; Meetup's logo is a typed slot (DEC-014) |
 
 Deprecated (never generate): the old headline text-highlight (Brand Guide 6.1 OLD), the venn as a
 photo mask, blue colour-washes on subject photos, the pre-2024 palette.

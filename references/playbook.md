@@ -9,6 +9,18 @@ are placeholders; the skill never invents a real one (DEC-006).
 | When | Post | Archetype × format | Channel | Must carry |
 |---|---|---|---|---|
 | 3–4 weeks before, Meetup page published | Announcement | `event-announce` portrait (LinkedIn/Instagram), landscape (LinkedIn link card, Meetup photo), square (WhatsApp); or `event-promo` landscape/portrait when the talk title, host logo and speakers should carry the post (MTP's organiser template, Black ground) | LinkedIn page, Meetup, WhatsApp group | date with month spelled out, time, venue, "Free to attend", "RSVP on Meetup" |
+| Meetup page live, speakers known | "It is on Meetup" post | `meetup-card` portrait: the Meetup event page as LinkedIn shows it, the event card inside, "Attend on Meetup" as the button (DEC-014) | LinkedIn, WhatsApp | title, date tile, venue, both speakers, "By ProductTank Belgium"; Meetup's logo only from Meetup's own file |
+| Speaker confirmed, date not yet | Speaker tease | `speaker-tease` square ("Meet the next speaker", month only, "Stay tuned for updates") | LinkedIn, Instagram | name, role, photo from the speaker; no invented date |
+| Speakers known, three or more | Line-up in columns | `lineup-columns` portrait (portraits above names, "Hosted by" slot) or `event-promo` square (one speaker, host top-right) | LinkedIn, Instagram | highlight, title, subtitle, venue, "Free to attend", host name as they write it |
+| Between events | Organiser intro | `team-member` portrait ("Meet the team", bar markup, cut-out photo) | LinkedIn, Instagram | name and role from the organiser |
+| Between events | Carousel cover (recommendations, ideas) | `carousel-cover` portrait ("Swipe to see" with an arrow, attribution) | LinkedIn carousel, Instagram | the recommender's name and role; the slides follow |
+| Page setup | Evergreen page cover | `linkedin-cover-evergreen` ("See you in Belgium", tagline, city photo) | LinkedIn page | a city photo the community owns |
+| Any time, one claim | Statement | `statement` portrait (icon facts, claim + payoff, partners row) | LinkedIn, Instagram | facts, host and partners as they write them |
+| Talk confirmed | Talk card | `talk-card` portrait (white card with title and abstract, the speaker row) | LinkedIn | title and abstract from the speaker |
+| Week of | Agenda | `agenda` portrait (numbered ladder of times) | LinkedIn, WhatsApp, Meetup | the agenda as published on Meetup |
+| 48 h before | Last call with numbers | `reminder-numbers` portrait (days left, seats left) | LinkedIn, WhatsApp | numbers from Meetup, never estimated |
+| Between events | Why come, milestone, a number | `explainer` portrait; `milestone` portrait (counter strip); `stat` portrait (hero number) | LinkedIn, Instagram | counts from Meetup or the survey |
+| Day of | Name badges | `badge-a6` (A6 at 300 dpi) | print | names as registered; role band: Speaker, Organiser, Host |
 | Same week | Speaker spotlight, one per speaker | `speaker-spotlight` portrait or landscape | LinkedIn (tag the speaker) | name, role, talk title from the speaker's own bio |
 | 2 weeks before | Line-up | `lineup` portrait / square | LinkedIn, Instagram | both speakers, facts row |
 | Host confirmed | Host thanks / venue | `call-for` square adapted ("Thanks to our host") or `event-announce` with the venue as key word | LinkedIn | host name exactly as they write it; "hosted by" or "supported by", never "powered by" |

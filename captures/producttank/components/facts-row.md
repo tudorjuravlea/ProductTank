@@ -1,6 +1,6 @@
 # facts-row: date · time · venue
 
-**Structure.** `<ul class="facts subheading" data-slot="facts"><li>Tuesday 14 October</li><li>18:30</li><li>Venue name, Brussels</li></ul>`.
+**Structure.** `<ul class="facts subheading" data-slot="facts"><li>Tuesday 14 October</li><li>18:30</li><li>Venue name, city</li></ul>`.
 Zingy Cyan dots separate the items (INFERRED from the site's dot separators and the WPD story's
 date/time highlight; the evergreen renders carry no facts row, the caption carries the facts there).
 

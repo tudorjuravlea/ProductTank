@@ -47,6 +47,7 @@ invented (DEC-006).
 | `event-banner` | 1600×900 | LinkedIn event / Meetup cover, deck cover |
 | `linkedin-cover` | 2256×382 | LinkedIn page cover |
 | `slide` | 1920×1080 | deck slides |
+| `badge-a6` | 1240×1748 | A6 name badge at 300 dpi (DEC-016) |
 
 **Archetypes** (`CAPTURE/templates/social/<archetype>-<format>.html`): `event-announce`
 (portrait, square, landscape, story; Bold Cyan, the MTP-central evergreen), `event-promo`
@@ -54,7 +55,13 @@ invented (DEC-006).
 location, host-logo box and circular speakers, DEC-010/011), `speaker-spotlight` (portrait, landscape), `lineup`
 (portrait, square), `reminder` (portrait, story), `recap-thanks` (portrait, landscape),
 `call-for` (portrait, square), `stat` (square), `quote` (portrait), `event-banner-1600x900`,
-`linkedin-cover`. **Slides** (`CAPTURE/templates/slides/`): `cover`, `welcome`, `agenda`,
+`linkedin-cover` (event and `evergreen`), `speaker-tease` (square), `team-member` (portrait), `carousel-cover`
+(portrait), `lineup-columns` (portrait, three speakers), `event-promo-square` (host top-right), all six
+learned from other chapters' posts and rebuilt inside the lock (DEC-015, `components/chapter-layouts.md`),
+`statement`, `stat` (portrait hero number), `milestone`, `talk-card`, `agenda`, `reminder-numbers`,
+`explainer` and `badge` (all portrait but the badge; rebuilt from a sibling community skill's
+campaign canvases, DEC-016, `components/programme-layouts.md`), `meetup-card` (portrait; the Meetup event page as LinkedIn shows it around the
+Midnight event card, "Attend on Meetup" as the button, Meetup's logo a typed slot, DEC-014). **Slides** (`CAPTURE/templates/slides/`): `cover`, `welcome`, `agenda`,
 `speaker`, `talk-title`, `panel`, `host-sponsor`, `community`, `closing`, plus `deck.html` (the
 presentable shell). Which post when: `SKILL/references/playbook.md`. Deck workflow:
 `SKILL/references/slides.md`. Slides follow MTP's 2026 organiser template: Black ground, lockup bottom-left at 300 px, blurple pill labels, a yellow underline under "Today's speaker(s)", circular portraits with name / role / "@ Company" (`speaker` helper in `templates/_lib.mjs`), ring shapes, white QR and sponsor-logo slots.
@@ -86,7 +93,7 @@ is the authority if these ever drift (the gauntlet's `docs` lane checks they mat
 **Signatures**
 1. "Every canvas carries the ProductTank lockup (wordmark + city + strapline), White or Midnight, left-aligned in the top-left or bottom-left corner": `grep: data-slot="lockup"`
 2. "The strapline reads exactly 'a Mind the Product meetup', never reworded, never translated": `grep: a Mind the Product meetup`
-3. "The ground is Bold Cyan (social default) or Midnight (stories, closing slides); Markup Yellow and Purple are never grounds" (Black `#060119` is the third allowed ground since DEC-010: slides and event-promo canvases)
+3. "The ground is Bold Cyan (social default) or Midnight (stories, closing slides); Markup Yellow and Purple are never grounds" (Black `#060119` is the third allowed ground since DEC-010: slides and event-promo canvases; the Light Gray frame of a `meetup-card` is not a ground, it depicts Meetup's page around the Midnight event card, DEC-014; the Gradient ground, measured from the owner's references (#3E67E7 to #3530AE to Midnight at 135 degrees), is the third core ground since DEC-017: `.canvas.ground-gradient`, `-gradient` twins)
 4. "Headlines are sentence case, Montserrat Bold (Cera Pro Bold when licensed), White on Bold Cyan or Midnight, at the display size of the format"
 5. "The key word of an announcement sits on one yellow Markup box in Midnight text; one markup gesture per canvas": `grep: class="markup` on announce/reminder/call-for
 6. "A venn (one full circle, one target, one of donut/polo/eye/ring) or one or two Venniverse shapes anchor the composition; never two targets": `grep: data-venn` on announce/spotlight/lineup/reminder
@@ -107,7 +114,7 @@ is the authority if these ever drift (the gauntlet's `docs` lane checks they mat
 10. "No 'PM' or 'PMs': the audience is product people; brand names are spelled Mind the Product and ProductTank (1.3)"
 11. "No invented facts: dates, venues, speaker names, sponsor names and numbers come from the brief or BRAND-FACTS §9, or the slot stays typed (DEC-006)"
 12. "No URLs baked into a canvas: the post or the Meetup page carries the link (playbook)"
-13. "No em dashes, no lorem ipsum, no glassmorphism or backdrop blur, no gradients except the tritone photo wash (Midnight > Bold Cyan > Zingy Cyan)"
+13. "No em dashes, no lorem ipsum, no glassmorphism or backdrop blur, no gradients except the tritone photo wash (Midnight > Bold Cyan > Zingy Cyan)" (and the Gradient ground of DEC-017, its two measured stops declared as tokens)
 14. "No AI-default typefaces (Inter, Roboto, Poppins, Space Grotesk, Arial as a display face) and no script or brush lettering"
 15. "Do not reuse the photography inside the Figma reference renders; it is Mind the Product's imagery, not this community's (DEC-007)"
 
@@ -182,7 +189,8 @@ Run from `CAPTURE` (the lock's directory):
 1. **Content/compliance lint**: `node ENGINE/scripts/adherence-lint.mjs --lock design-lock.json --src templates`
    then the brand linter `node SKILL/tools/pt-lint.mjs --lock design-lock.json --src <file|dir>`
    (16 rules: lockup presence/colour/corner/width, one markup, ground, venn recipe, one target,
-   sentence case, PM, brand names, dates, disclosures, URLs, strapline). An ERROR blocks
+   sentence case, PM, brand names, dates, disclosures, URLs, strapline; a `meetup-card` is measured
+   on its inner event card). An ERROR blocks
    regardless of looks.
 2. **Taste self-critique** (yours): Philosophy-alignment / Hierarchy / Craft / Functionality, 0to10
    with cited evidence; any score of 4 or less means redo. Check every signature. Run the **brand-transplant test**:

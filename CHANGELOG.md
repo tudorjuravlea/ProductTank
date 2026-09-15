@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.9.0 (2026-09-15)
+
+- A third ground beside Bold Cyan and Black: the Gradient ground (`.canvas.ground-gradient`,
+  decision DEC-017), a 135 degree gradient from a bright blue through a darkened Blurple to Midnight.
+  Twelve templates ship a `-gradient` twin.
+- Six new layouts learned from other chapters' posts (DEC-015): `speaker-tease-square`,
+  `team-member-portrait`, `carousel-cover-portrait`, `lineup-columns-portrait`, `event-promo-square`,
+  `linkedin-cover-evergreen`.
+- Eight new layouts (DEC-016), each with a `-black` twin: `statement-portrait`, `stat-portrait`,
+  `milestone-portrait`, `talk-card-portrait`, `agenda-portrait`, `reminder-numbers-portrait`,
+  `explainer-portrait` and `badge-a6` (a new A6 name badge format at 300 dpi).
+- A `meetup-card` layout (DEC-014): a post that looks like the Meetup event page around the event
+  card, with "Attend on Meetup" as the button; Meetup's own logo stays a typed slot.
+- The address placeholder in the templates is now "Venue name, city".
+- Every template with the logo on top starts its copy lower (360 px on portrait).
+- The brand checker accepts the Gradient ground and measures a `meetup-card` on its inner event card.
+- 64 social templates in total; component specs `chapter-layouts.md`, `programme-layouts.md`,
+  `meetup-card.md`.
+
 ## 0.4.0 (2026-09-15)
 
 - The community is now "ProductTank Belgium" (decision DEC-013 in the design lock). The logo files

@@ -12,16 +12,18 @@
 //   lockup-present          exactly one [data-slot="lockup"] with an <img> from assets/logo
 //   lockup-colour           the lockup file is a -white or -midnight variant
 //   lockup-corner           lockup left edge on the margin; vertically in the top or bottom third
+//   (meetup-card: the lockup and the ground are measured on the inner [data-slot="event-card"], tilt removed, DEC-014)
 //   lockup-min-width        rendered lockup width >= 80 px
 //   markup-once             at most one markup gesture (.markup, .underline-markup, [data-markup])
-//   yellow-not-ground       the canvas background is Bold Cyan, Midnight or Black (never Markup Yellow, Purple, White on social)
+//   yellow-not-ground       the canvas background is Bold Cyan, Midnight, Black or the Gradient ground (.ground-gradient, DEC-017; never Markup Yellow, Purple, White on social);
+//                           a meetup-card frame is Light Gray (it depicts Meetup's page) and its inner event card is checked instead
 //   venn-recipe             data-venn = one full + one target + one of donut|polo|eye|ring, or all full
 //   target-once             at most one target in data-venn
 //   headline-sentence-case  [data-slot="headline"] is not all caps
 //   no-pm-abbrev            no "PM"/"PMs" as a word in visible text
 //   brand-names             no "Product Tank", "Mind The Product", "MindTheProduct", "Productank", "ProductTank Brussels" (DEC-013)
 //   date-month-spelled      no numeric d/m dates in [data-slot="facts"] or visible text
-//   announce-disclosure     archetype event-announce carries "Free to attend" + "Meetup"; reminder carries "Meetup"
+//   announce-disclosure     archetype event-announce carries "Free to attend" + "Meetup"; reminder carries "Meetup"; meetup-card carries "Attend on Meetup"
 //   no-external-url         no http(s):// or www. in visible text
 //   strapline-verbatim      the lockup alt (or visible text) contains exactly "a Mind the Product meetup"
 import { createRequire } from 'node:module';
@@ -75,6 +77,10 @@ async function lintFile(page, file) {
   await page.evaluate(() => document.fonts.ready);
   const d = await page.evaluate(() => {
     const canvas = document.querySelector('.canvas');
+    // meetup-card (DEC-014): the brand canvas is the inner event card; measure it with the tilt removed.
+    const inner = canvas?.getAttribute('data-archetype') === 'meetup-card' ? canvas.querySelector('[data-slot="event-card"]') : null;
+    const tilt = inner ? inner.closest('.frame-tilt') : null; if (tilt) tilt.style.transform = 'none';
+    const ground = inner || canvas;
     const rect = (el) => { const r = el.getBoundingClientRect(); return { x: r.x, y: r.y, w: r.width, h: r.height }; };
     const lockups = [...document.querySelectorAll('[data-slot="lockup"]')];
     const imgs = lockups.map((l) => l.querySelector('img'));
@@ -84,9 +90,11 @@ async function lintFile(page, file) {
       hasCanvas: !!canvas,
       format: canvas?.getAttribute('data-format') || null,
       archetype: canvas?.getAttribute('data-archetype') || null,
-      canvasRect: canvas ? rect(canvas) : null,
-      canvasBg: canvas ? getComputedStyle(canvas).backgroundColor : null,
-      canvasMargin: canvas ? getComputedStyle(canvas).getPropertyValue('--margin') : null,
+      canvasRect: ground ? rect(ground) : null,
+      canvasBg: ground ? getComputedStyle(ground).backgroundColor : null,
+      gradientGround: !!(ground && ground.classList.contains('ground-gradient') && /linear-gradient/.test(getComputedStyle(ground).backgroundImage)),
+      canvasMargin: ground ? (inner ? getComputedStyle(inner).paddingLeft : getComputedStyle(canvas).getPropertyValue('--margin')) : null,
+      innerCard: !!inner,
       lockups: lockups.map((l, i) => ({ rect: rect(l), src: imgs[i]?.getAttribute('src') || null, alt: imgs[i]?.getAttribute('alt') || '', text: l.innerText })),
       markups: document.querySelectorAll('.markup, .underline-markup, [data-markup]').length,
       venns: [...document.querySelectorAll('[data-venn]')].map((v) => v.getAttribute('data-venn')),
@@ -116,7 +124,7 @@ async function lintFile(page, file) {
   }
   // ground
   const bg = hex(d.canvasBg);
-  if (social && (!bg || !GROUNDS.has(bg))) add('yellow-not-ground', `social canvas background is ${bg}; only Bold Cyan ${tok['bold-cyan']}, Midnight ${tok.midnight} or Black ${tok.black}`);
+  if (social && !d.gradientGround && (!bg || !GROUNDS.has(bg))) add('yellow-not-ground', `social canvas background is ${bg}; only Bold Cyan ${tok['bold-cyan']}, Midnight ${tok.midnight}, Black ${tok.black} or the Gradient ground (DEC-017)`);
   if (!social && bg === tok.action.toUpperCase()) add('yellow-not-ground', 'Markup Yellow is never a ground');
   // markup
   if (d.markups > 1) add('markup-once', `${d.markups} markup gestures; one per canvas`);
@@ -139,6 +147,8 @@ async function lintFile(page, file) {
   if (/\b\d{1,2}[./]\d{1,2}(?:[./]\d{2,4})?\b/.test(d.factsText + ' ' + text)) add('date-month-spelled', 'a numeric date (d/m) appears; spell out the month');
   if (/^event-announce/.test(arche) && !(/Free to attend/.test(text) && /Meetup/.test(text))) add('announce-disclosure', 'event-announce canvases must say "Free to attend" and mention Meetup');
   if (/^reminder/.test(arche) && !/Meetup/.test(text)) add('announce-disclosure', 'reminder canvases must mention Meetup');
+  if (arche === 'meetup-card' && !d.innerCard) add('canvas-declared', 'meetup-card needs an inner [data-slot="event-card"] (the brand canvas)');
+  if (arche === 'meetup-card' && !/Attend on Meetup/.test(text)) add('announce-disclosure', 'meetup-card canvases must say "Attend on Meetup"');
   if (/https?:\/\/|\bwww\./i.test(text)) add('no-external-url', 'a URL is baked into the canvas; the post carries the link');
   return findings;
 }

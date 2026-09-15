@@ -4,7 +4,7 @@ import { writeFileSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const CAP = '../../captures/producttank';
-const clean = ({ format = 'social-portrait', archetype = 'event-announce', lockup = 'bottom', logo = `${JSON.parse(readFileSync(path.join(HERE, CAP, 'lockup.json'), 'utf8')).file}-white.svg`, alt = 'ProductTank Belgium, a Mind the Product meetup', headline = 'Welcome back: <span class="markup" data-markup="box">Belgium</span>', venn = 'target,full,ring', facts = '<li>Tuesday 14 October</li><li>18:30</li><li>Venue name, Brussels</li>', body = 'Two talks, networking before and after. Free to attend, RSVP on Meetup.', extraMarkup = '', ground = '', readyAttr = 'data-render-ready', width = '380', lockupStyle = '' } = {}) => `<!doctype html>
+const clean = ({ format = 'social-portrait', archetype = 'event-announce', lockup = 'bottom', logo = `${JSON.parse(readFileSync(path.join(HERE, CAP, 'lockup.json'), 'utf8')).file}-white.svg`, alt = 'ProductTank Belgium, a Mind the Product meetup', headline = 'Welcome back: <span class="markup" data-markup="box">Belgium</span>', venn = 'target,full,ring', facts = '<li>Tuesday 14 October</li><li>18:30</li><li>Venue name, city</li>', body = 'Two talks, networking before and after. Free to attend, RSVP on Meetup.', extraMarkup = '', ground = '', readyAttr = 'data-render-ready', width = '380', lockupStyle = '' } = {}) => `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>fixture</title>
 <link rel="stylesheet" href="${CAP}/fonts/fonts.css"><link rel="stylesheet" href="${CAP}/assets/tokens.css"><link rel="stylesheet" href="${CAP}/assets/base.css">
 <style>${ground}</style></head>

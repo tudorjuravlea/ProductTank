@@ -72,6 +72,8 @@ Cyan `#007EB6`, Light Cyan Mist `#EFF6F7`, Medium Grey `#8B98A7`, Alert Red `#FA
 `#092232`, `#442A30`, `#EDFE37`, `#C4BFB2`. `#EBEF23` (seen on the file's markup shapes) is the
 same yellow drawn by hand, not a second token (DEC-008).
 
+**Gradient ground (DEC-017, rung 5: owner ruling on other chapters' posts).** The third core ground beside Bold Cyan and Black: a 135-degree linear gradient measured from the references, #3E67E7 (top-left) through #3530AE (50 %) to Midnight (bottom-right); the two measured stops are tokens of the decision, White text, the White lockup. Class `.ground-gradient`; templates ship `-gradient` twins.
+
 ## 2. Typography [G 3.1, 3.2; rung 1] and the shipped face
 
 - Brand typeface **Cera Pro** (TypeMates), "chosen for its simplicity, warmth and elegance …
@@ -259,6 +261,12 @@ trio on white.
 
 Margins observed: 63–72 px on the 1000–1080 canvases, 53–62 px on 1200×628, 108–116 px on the
 story. The 8 px rhythm [G 1.4] governs the shipped scale.
+
+**Meetup event card (DEC-014, rung 5: inferred from a Meetup share image, not from MTP).** A Meetup event page shared to LinkedIn renders as a light card: the event's cover image tilted with a shadow at the top, the title in a heavy sans beside a date tile (month, day, time), a location row with a pin, a full-width outlined "Attend on" button, the group name ("By ProductTank <chapter>") and Meetup's mark. Measured at 959×1197 (another chapter's event, kept in (private capture notes), its photography never reused): frame padding ≈ 70, cover ≈ 830×500 tilted ≈ −3°, title ≈ 48 px, tile 96×96, button ≈ 95 tall with a 2 px border, by-line ≈ 32 px. The `meetup-card` archetype reproduces the structure in Montserrat and the brand tokens; Meetup's mark is a typed slot.
+
+**Chapter layouts observed (DEC-015, rung 5: other chapters' posts, not MTP's guide).** Seventeen posts from three other chapters (kept in (private capture notes), people and photos never reused) show six recurring compositions beyond the guide's templates: a speaker tease with the month only, an organiser intro with a bar beside the name, a carousel cover with a "swipe" pill and arrow, three speakers in columns with a host slot top-right, a square promo with the host top-right, and an evergreen page cover with a tagline and a city photo. Rebuilt as templates in this system's grounds and type (`components/chapter-layouts.md`). Also seen and not adopted: Blurple and gradient grounds, coloured venue text, stacked highlights, right-hand lockups, abbreviated months, the 2023 palette and wordmark, 3D emoji.
+
+**Programme layouts (DEC-016, rung 5: a sibling community skill's canvases, not MTP's guide).** Eight structures with no equivalent here were rebuilt in this system's grounds and type: a statement with a payoff line and a partners row, a hero number, an edition counter strip, a white talk card with a straddling pill, a numbered agenda ladder, twin countdown numbers, titled explainer blocks and an A6 name badge (`components/programme-layouts.md`). Not adopted: light and gradient grounds, the script watermark, shingled nameplates, the sibling's palette, people and copy.
 
 ## 9. Community facts (sourced only; slots otherwise)
 

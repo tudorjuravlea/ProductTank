@@ -289,6 +289,96 @@
   ],
   "screens": [
     {
+      "id": "agenda-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/agenda-portrait.html",
+      "stateContract": "agenda template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=agenda format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "agenda-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/agenda-portrait-black.html",
+      "stateContract": "agenda template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=agenda format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "agenda-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/agenda-portrait-gradient.html",
+      "stateContract": "agenda template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=agenda format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "badge-a6",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1240,
+      "captureHeight": 1748,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/badge-a6.html",
+      "stateContract": "badge template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=badge format=badge-a6; tear-down reference: none"
+    },
+    {
+      "id": "badge-a6-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1240,
+      "captureHeight": 1748,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/badge-a6-black.html",
+      "stateContract": "badge template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=badge format=badge-a6; tear-down reference: none"
+    },
+    {
+      "id": "badge-a6-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1240,
+      "captureHeight": 1748,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/badge-a6-gradient.html",
+      "stateContract": "badge template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=badge format=badge-a6; tear-down reference: none"
+    },
+    {
       "id": "call-for-portrait",
       "mode": "B2",
       "netNew": true,
@@ -317,6 +407,36 @@
         "en"
       ],
       "note": "archetype=call-for format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "carousel-cover-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/carousel-cover-portrait.html",
+      "stateContract": "carousel-cover template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=carousel-cover format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "carousel-cover-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/carousel-cover-portrait-gradient.html",
+      "stateContract": "carousel-cover template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=carousel-cover format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     },
     {
       "id": "demo-linkedin-cover-2026-10-08",
@@ -469,6 +589,96 @@
       "note": "archetype=event-promo format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     },
     {
+      "id": "event-promo-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/event-promo-square.html",
+      "stateContract": "event-promo template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=event-promo format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "explainer-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/explainer-portrait.html",
+      "stateContract": "explainer template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=explainer format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "explainer-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/explainer-portrait-black.html",
+      "stateContract": "explainer template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=explainer format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "explainer-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/explainer-portrait-gradient.html",
+      "stateContract": "explainer template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=explainer format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "lineup-columns-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/lineup-columns-portrait.html",
+      "stateContract": "lineup template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=lineup format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "lineup-columns-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/lineup-columns-portrait-gradient.html",
+      "stateContract": "lineup template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=lineup format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
       "id": "lineup-portrait",
       "mode": "B2",
       "netNew": true,
@@ -514,6 +724,81 @@
       "note": "archetype=linkedin-cover format=linkedin-cover; tear-down reference: reference/figma/mtp-producttank-linkedin_cover_image.png"
     },
     {
+      "id": "linkedin-cover-evergreen",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 2256,
+      "captureHeight": 382,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/linkedin-cover-evergreen.html",
+      "stateContract": "linkedin-cover template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=linkedin-cover format=linkedin-cover; tear-down reference: reference/figma/mtp-producttank-linkedin_cover_image.png"
+    },
+    {
+      "id": "meetup-card-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/meetup-card-portrait.html",
+      "stateContract": "meetup-card template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=meetup-card format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "milestone-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/milestone-portrait.html",
+      "stateContract": "milestone template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=milestone format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "milestone-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/milestone-portrait-black.html",
+      "stateContract": "milestone template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=milestone format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "milestone-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/milestone-portrait-gradient.html",
+      "stateContract": "milestone template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=milestone format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
       "id": "quote-portrait",
       "mode": "B2",
       "netNew": true,
@@ -557,6 +842,51 @@
         "en"
       ],
       "note": "archetype=recap-thanks format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "reminder-numbers-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/reminder-numbers-portrait.html",
+      "stateContract": "reminder template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=reminder format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "reminder-numbers-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/reminder-numbers-portrait-black.html",
+      "stateContract": "reminder template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=reminder format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "reminder-numbers-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/reminder-numbers-portrait-gradient.html",
+      "stateContract": "reminder template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=reminder format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     },
     {
       "id": "reminder-portrait",
@@ -754,6 +1084,81 @@
       "note": "archetype=speaker-spotlight format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     },
     {
+      "id": "speaker-tease-square",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/speaker-tease-square.html",
+      "stateContract": "speaker-tease template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=speaker-tease format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "speaker-tease-square-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1080,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/speaker-tease-square-gradient.html",
+      "stateContract": "speaker-tease template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=speaker-tease format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "stat-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/stat-portrait.html",
+      "stateContract": "stat template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=stat format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "stat-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/stat-portrait-black.html",
+      "stateContract": "stat template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=stat format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "stat-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/stat-portrait-gradient.html",
+      "stateContract": "stat template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=stat format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
       "id": "stat-square",
       "mode": "B2",
       "netNew": true,
@@ -767,6 +1172,126 @@
         "en"
       ],
       "note": "archetype=stat format=social-square; tear-down reference: reference/figma/mtp-producttank-social-1000x1000.png"
+    },
+    {
+      "id": "statement-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/statement-portrait.html",
+      "stateContract": "statement template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=statement format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "statement-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/statement-portrait-black.html",
+      "stateContract": "statement template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=statement format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "statement-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/statement-portrait-gradient.html",
+      "stateContract": "statement template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=statement format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "talk-card-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/talk-card-portrait.html",
+      "stateContract": "talk-card template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=talk-card format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "talk-card-portrait-black",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "dark",
+      "url": "templates/social/talk-card-portrait-black.html",
+      "stateContract": "talk-card template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=talk-card format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "talk-card-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/talk-card-portrait-gradient.html",
+      "stateContract": "talk-card template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=talk-card format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "team-member-portrait",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/team-member-portrait.html",
+      "stateContract": "team-member template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=team-member format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
+    },
+    {
+      "id": "team-member-portrait-gradient",
+      "mode": "B2",
+      "netNew": true,
+      "captureWidth": 1080,
+      "captureHeight": 1350,
+      "dpr": 1,
+      "colorScheme": "light",
+      "url": "templates/social/team-member-portrait-gradient.html",
+      "stateContract": "team-member template with typed sample copy; Belgium lockup; no photo (slot only)",
+      "locales": [
+        "en"
+      ],
+      "note": "archetype=team-member format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     }
   ],
   "caps": {
@@ -1119,6 +1644,38 @@
       "rationale": "Owner ruling 2026-09-15: 'I need a logo that says ProductTank Belgium and this is how we will call it from now on instead of ProductTank Brussels.' No official Belgium file exists in MTP's logo repository, so the city line is set in the organiser face (DEC-002) at the closest optical weight to the Cera Pro Regular original; ask MTP's regional coordinator for an official file and drop it in when it exists.",
       "status": "approved",
       "supersedes": "DEC-012"
+    },
+    {
+      "id": "DEC-014",
+      "date": "2026-09-15",
+      "scope": "archetype meetup-card",
+      "decision": "The meetup-card archetype (templates/social/meetup-card-portrait.html) depicts the Meetup event page as LinkedIn shows it: a Light Gray frame (--light-gray) around a tilted Midnight event card, then the event title, a date tile, the location line with a Lucide pin, an 'Attend on Meetup' button, 'By ProductTank <chapter>' and a typed slot for Meetup's logo. The frame is not a brand ground: the brand canvas is the inner card (data-slot=\"event-card\"), which carries the lockup, the highlight, the headline, the venue and the speakers under every social rule; the linter measures the lockup and the ground on the inner card with the tilt removed. All type is Montserrat. Meetup's mark is never drawn or retyped by the skill: the slot stays typed until the organiser drops Meetup's own logo file in under Meetup's brand terms.",
+      "rationale": "Owner request 2026-09-15 with a Meetup share image of another chapter's event as the reference (kept privately, its photography never reused): a LinkedIn post that looks like the Meetup card tells readers the event lives on Meetup and that they confirm there. Measured from the reference at 959x1197: frame padding about 70 px, card tilt about -3 degrees with a soft shadow, title about 48 px bold, a 96 px date tile at the right, a full-width outlined pill button, the by-line and the platform mark on the last row.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-015",
+      "date": "2026-09-15",
+      "scope": "social templates",
+      "decision": "Six layouts observed in other ProductTank chapters' posts (references kept privately, their photography and people never reused) are rebuilt inside this system as templates: speaker-tease-square (\"Meet the next speaker\" with an exclamation markup, name, role, a portrait circle and a month | \"Stay tuned for updates\" highlight), team-member-portrait (\"Meet the team\" pill, name beside a yellow bar markup, role, cut-out photo), carousel-cover-portrait (headline, subheading, \"Swipe to see\" pill with an arrow markup, an attribution block, cut-out photo), lineup-columns-portrait (highlight, headline, subtitle, venue, three speaker columns with the portrait above name and role, a \"Hosted by\" host slot top-right), event-promo-square (Black ground, \"Hosted by\" top-right, a date-time | venue highlight, title, subtitle, one speaker row) and linkedin-cover-evergreen (lockup, a vertical divider, \"See you in Belgium\" on a markup box, the tagline, a city photo slot). New helpers: .bar-markup (counts as the one markup gesture), .speaker.col, .portrait-circle, .hosted-by, .divider-v.",
+      "rationale": "Owner request 2026-09-15 (\"learn how to create these styles of layouts\"). Kept from the references: the compositions, the host slot, the speaker columns, the bar and exclamation and arrow gestures, the month-only highlight, the tagline cover. Not adopted, because the lock forbids them: Blurple and gradient grounds (signature 3, don't 13), coloured text such as a Zingy Cyan venue name (don't 5), stacked two-row highlights (don't 7), the lockup on the right (don't 3), the 2023 palette, wordmark and orange donut of the legacy Belgium and quiz posts (DEC-003), abbreviated months in facts (voice), 3D emoji illustration and stock objects (imagery policy), and Mind the Product's own book-shelf post (central content, not a chapter layout). A chapter that wants Blurple grounds needs a new decision from the owner, not a template.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-016",
+      "date": "2026-09-15",
+      "scope": "social templates, formats",
+      "decision": "Eight compositions from a sibling community skill's campaign canvases (kept private; its people, photos, partner names and programme copy never reused) are rebuilt inside this system: statement-portrait (icon facts row, statement + payoff, a hosted-and-supported-by partners row), stat-portrait (a hero number with a caption and a payoff), milestone-portrait (statement with a markup word and an edition counter strip), talk-card-portrait (a white card with the talk title and abstract, a straddling pill, the speaker row), agenda-portrait (a numbered ladder of times), reminder-numbers-portrait (two typed countdown numbers), explainer-portrait (a headline and three titled blocks) and badge-a6 (an A6 name badge at 300 dpi: lockup, name, company, partners row, a Midnight role band). New format badge-a6 (1240x1748, no bleed). New helpers: .facts.icons (Lucide outlines), .payoff, .hairline, .partners, .hero-number, .counter, .card with .pill.straddle, .ladder, .twin, .blocks, .badge-band. Each of the eight ships a Black-ground twin (-black, DEC-010 ground, data-theme dark); the badge twin's band is Bold Cyan.",
+      "rationale": "Owner request 2026-09-15 (\"take a look at the templates in the sibling skill and redesign them in ProductTank style\"). Kept: the structures (statement and payoff, partner row, hero number, counter, card, ladder, twin numbers, explainer blocks, badge). Not adopted, because the lock forbids them: the light and gradient grounds and the script watermark (signature 3, don't 13), shingled two-plate nameplates (don't 7), the sibling's palette and faces, vertical divider bans that are its own, and its programme copy. Numbers stay typed (NN) until counted (DEC-006). Grounds stay Bold Cyan; the badge band is Midnight.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-017",
+      "date": "2026-09-15",
+      "scope": "global: grounds",
+      "decision": "A third ground joins Bold Cyan and Black: the Gradient ground, `.canvas.ground-gradient`, replicated from the owner's three reference posts, which share one ground: a linear gradient at 135 degrees (top-left to bottom-right) from #3E67E7 (0 %) through #3530AE (50 %) to Midnight #17044A (100 %). The two measured stops are declared as tokens of this decision in base.css (`--ground-gradient-start`, `--ground-gradient-mid`); the end stop is the Midnight token. Text on it is White, the markup word stays Midnight on Markup Yellow, the venn keeps its colours, the lockup is the White file. It is the one gradient allowed beside the tritone photo wash. Templates ship a `-gradient` twin for the eight programme layouts (DEC-016) and the four chapter layouts that came from gradient references (speaker-tease, team-member, carousel-cover, lineup-columns).",
+      "rationale": "Owner ruling 2026-09-15: \"I love the smooth gradients and the more premium look of these; can we have a third core alternative along the lighter blue and dark blue?\", then \"replicate the exact gradients, don't invent a new one\". Sampled from the three references (1280x1600, identical ground): top-left #3D66E6, top-right #3B39C0, left edge mid #4240D2 to bottom #2D2594, right edge mid #2A1F88, centre #352FAB, bottom-right corner #17064C, which is the Midnight token within rounding. Signature 3 and don't 13 read with this decision, as they already do with DEC-010 for Black.",
+      "status": "approved"
     }
   ],
   "imagery": {

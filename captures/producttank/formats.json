@@ -6,5 +6,6 @@
   "story":            { "width": 1080, "height": 1920, "use": "Instagram / LinkedIn stories, WhatsApp status; keep content out of the top 250 px and bottom 300 px", "reference": "reference/figma/mtp_story_producttank_worldproductday_1200.png" },
   "event-banner":     { "width": 1600, "height": 900,  "use": "LinkedIn event / Meetup cover, deck cover", "reference": "reference/figma/mtp-producttank-slidecover.png" },
   "linkedin-cover":   { "width": 2256, "height": 382,  "use": "LinkedIn page cover (2x of 1128x191)", "reference": "reference/figma/mtp-producttank-linkedin_cover_image.png" },
-  "slide":            { "width": 1920, "height": 1080, "use": "deck slides (16:9)", "reference": null }
+  "slide":            { "width": 1920, "height": 1080, "use": "deck slides (16:9)", "reference": null },
+  "badge-a6":         { "width": 1240, "height": 1748, "use": "event name badge, A6 portrait at 300 dpi, no bleed (DEC-016)", "reference": null }
 }
