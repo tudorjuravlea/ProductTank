@@ -11,5 +11,5 @@ Three canvases composed with the producttank skill on 2026-09-07 from the shippe
 
 Gates: engine adherence-lint PASS, pt-lint PASS (2 files), `verify.mjs` on both screens
 `lint=ok render=ok geometry=ok census=ok`, pixel gate `diff=FAIL(2)` = no reference (net-new,
-expected). Production status: **concept-ready** (no photo, no time or venue, DEC-001 lockup is
-the Brussels file with "Belgium" in copy). Both are registered as `demo-*` screens in the lock.
+expected). Production status: **concept-ready** (no photo, no time or venue, lockup is the
+DEC-013 Belgium file since 2026-09-15). Both are registered as `demo-*` screens in the lock.

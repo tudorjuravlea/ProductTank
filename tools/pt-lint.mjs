@@ -19,7 +19,7 @@
 //   target-once             at most one target in data-venn
 //   headline-sentence-case  [data-slot="headline"] is not all caps
 //   no-pm-abbrev            no "PM"/"PMs" as a word in visible text
-//   brand-names             no "Product Tank", "Mind The Product", "MindTheProduct", "Productank", "ProductTank Belgium" (DEC-012)
+//   brand-names             no "Product Tank", "Mind The Product", "MindTheProduct", "Productank", "ProductTank Brussels" (DEC-013)
 //   date-month-spelled      no numeric d/m dates in [data-slot="facts"] or visible text
 //   announce-disclosure     archetype event-announce carries "Free to attend" + "Meetup"; reminder carries "Meetup"
 //   no-external-url         no http(s):// or www. in visible text
@@ -134,7 +134,7 @@ async function lintFile(page, file) {
   if (d.headline) { const letters = d.headline.replace(/[^A-Za-z]/g, ''); if (letters.length > 3 && letters === letters.toUpperCase()) add('headline-sentence-case', `headline is all caps: "${d.headline.slice(0, 50)}"`); }
   const text = d.text || '';
   if (/\bPMs?\b/.test(text)) add('no-pm-abbrev', 'visible text says "PM"/"PMs"; say product manager / product people');
-  const bad = [/Product Tank/, /Mind The Product/, /MindTheProduct/, /Productank/i, /Product-Tank/i, /ProductTank Belgium/i].find((r) => r.test(text));
+  const bad = [/Product Tank/, /Mind The Product/, /MindTheProduct/, /Productank/i, /Product-Tank/i, /ProductTank Brussels/i].find((r) => r.test(text));
   if (bad) add('brand-names', `visible text spells a brand name wrong (${bad})`);
   if (/\b\d{1,2}[./]\d{1,2}(?:[./]\d{2,4})?\b/.test(d.factsText + ' ' + text)) add('date-month-spelled', 'a numeric date (d/m) appears; spell out the month');
   if (/^event-announce/.test(arche) && !(/Free to attend/.test(text) && /Meetup/.test(text))) add('announce-disclosure', 'event-announce canvases must say "Free to attend" and mention Meetup');

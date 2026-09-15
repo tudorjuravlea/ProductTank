@@ -32,7 +32,7 @@ amplifies it; pre- and post-event engagement (comments, photos, anticipation) ke
    ("product people", whatever the role).
 4. **Call to action** (one): "RSVP on Meetup" plus the link; free to attend; bring a colleague.
 5. **Credits**: speakers tagged, host thanked ("hosted by"), sponsors ("supported by").
-6. **Hashtags** (3–5): `#ProductTank #ProductTankBrussels #mindtheproduct #productmanagement`
+6. **Hashtags** (3–5): `#ProductTank #ProductTankBelgium #mindtheproduct #productmanagement`
    plus the theme. This set is a proposal (rung 6); replace it with the community's own once
    confirmed and record it in BRAND-FACTS §9.
 

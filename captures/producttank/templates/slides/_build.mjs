@@ -15,7 +15,7 @@ T.cover = { ground: 'cyan', html: slide('cover', 'cover', 'cyan', `
 ${photo('left:50%;', 'Textural photo slot: the globe or a scene from a past evening, full-bleed on the right half, takes the tritone wash', 'photo textural')}
 ${venn(1920, 1080, 'target,full,ring', target(1560, 700, 460) + full(1900, 1080, 260) + ring(1180, 1060, 240), 'z-index:2')}
 <div class="copy" style="top: 320px; right: 960px">
-  <h1 class="headline" data-slot="headline">Welcome to<br>ProductTank<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline">Welcome to<br>ProductTank<br><span class="markup" data-markup="box">Belgium</span></h1>
   <div style="margin-top: var(--space-10)">${facts(['Tuesday 14 October', '18:30', 'Venue name'])}</div>
 </div>
 ${L('white', 420)}`) };
@@ -73,7 +73,7 @@ ${venn(1920, 1080, 'target,full,ring', rings(1860, 80, 160) + full(60, 1040, 200
   <h1 class="slide-title" data-slot="headline" style="margin-top: var(--space-8); position: relative; display: inline-block">Today's speakers${underline(560)}</h1>
 </div>
 <div style="position:absolute;right:var(--space-24);top:264px;z-index:2;display:flex;flex-direction:column;gap:var(--space-8);width:760px" data-slot="lineup">
-  ${speaker('Firstname Lastname', 'Moderator', 'ProductTank Brussels', 128)}
+  ${speaker('Firstname Lastname', 'Moderator', 'ProductTank Belgium', 128)}
   ${speaker('Firstname Lastname', 'Director of Product', 'Acme', 128)}
   ${speaker('Firstname Lastname', 'Product lead', 'Beta', 128)}
 </div>
@@ -96,7 +96,7 @@ ${venn(1920, 1080, 'target,full,ring', full(1860, 1000, 240) + rings(1820, 120, 
 <div class="copy">
   <h1 class="slide-title" data-slot="headline">Stay in the <span class="markup" data-markup="box">loop</span></h1>
   <div style="display:flex;gap:var(--space-12);margin-top: var(--space-12)" data-slot="channels">
-    ${qrCard('Meetup', 'RSVP to every evening', 'Search for ProductTank Brussels on Meetup; slides and photos land on the event page afterwards.')}
+    ${qrCard('Meetup', 'RSVP to every evening', 'Search for ProductTank Belgium on Meetup; slides and photos land on the event page afterwards.')}
     ${qrCard('Speaking', 'Speak at ProductTank', 'Twenty minutes, one story from your product work. Talk to any organiser tonight.')}
     ${qrCard('Sponsorship', 'Host or sponsor an evening', 'A room, a screen, drinks: that is a ProductTank. Local sponsors keep it free.')}
   </div>
@@ -116,7 +116,7 @@ ${L('white', 300)}`) };
 for (const [id, t] of Object.entries(T)) writeFileSync(path.join(HERE, `${id}.html`), t.html);
 const order = ['cover', 'welcome', 'agenda', 'speaker', 'talk-title', 'panel', 'host-sponsor', 'community', 'closing'];
 writeFileSync(path.join(HERE, 'deck.html'), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>ProductTank Brussels deck</title>
+<html lang="en"><head><meta charset="utf-8"><title>ProductTank Belgium deck</title>
 <style>
 html,body{margin:0;height:100%;background:#000;overflow:hidden}
 .stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
@@ -145,7 +145,7 @@ if (process.argv.includes('--register')) {
   const keep = (lock.screens || []).filter((s) => !s.id.startsWith('slide-') || s.referenceImage);
   for (const [id, t] of Object.entries(T)) {
     const sid = `slide-${id}`; if (keep.find((s) => s.id === sid)) continue;
-    keep.push({ id: sid, mode: 'B2', netNew: true, captureWidth: 1920, captureHeight: 1080, dpr: 1, colorScheme: t.ground === 'cyan' ? 'light' : 'dark', url: `templates/slides/${id}.html`, stateContract: `slide layout '${id}' with typed sample copy; Brussels lockup; photo/logo/QR slots only`, locales: ['en'], note: `archetype=slide-${id} format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render` });
+    keep.push({ id: sid, mode: 'B2', netNew: true, captureWidth: 1920, captureHeight: 1080, dpr: 1, colorScheme: t.ground === 'cyan' ? 'light' : 'dark', url: `templates/slides/${id}.html`, stateContract: `slide layout '${id}' with typed sample copy; Belgium lockup; photo/logo/QR slots only`, locales: ['en'], note: `archetype=slide-${id} format=slide; references: MTP 2026 organiser slide template (owner export), slide cover render` });
   }
   keep.sort((a, b) => a.id.localeCompare(b.id)); lock.screens = keep;
   writeFileSync(lockPath, JSON.stringify(lock, null, 2) + '\n'); console.log('screens registered:', keep.length);

@@ -1,7 +1,8 @@
 # Lockups
 
-`producttank-brussels-midnight.svg` and `producttank-brussels-white.svg` are the official ProductTank
-Brussels lockups, and `mtp-wordmark-*.svg` the Mind the Product wordmark, included with Mind the
+`producttank-belgium-midnight.svg` and `producttank-belgium-white.svg` are the ProductTank Belgium
+lockups (the ProductTank wordmark and strapline from the official Brussels file, the word Belgium set in
+Montserrat and outlined). `producttank-brussels-*.svg` are the official ProductTank Brussels lockups, and `mtp-wordmark-*.svg` the Mind the Product wordmark, included with Mind the
 Product's permission for ProductTank organisers (see `../../../../NOTICE`). `producttank-generic-*`,
 `producttank-cityname-*` and `producttank-wordmark-*` are the generic variants from the same
 repository. The `*-placeholder-*` files are dashed slots drawn for this repository, used only while a

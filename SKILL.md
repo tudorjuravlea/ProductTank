@@ -1,11 +1,11 @@
 ---
 name: producttank
-description: Pixel-precise generation locked to the ProductTank Brussels design system (a Mind the Product meetup), with a machine-verified ship gate (render, then pixel diff, then token and microcopy lint through the shared fidelity engine) for social posts and slide decks. Use ONLY when the user explicitly asks to build/reproduce screens in ProductTank Brussels, make a ProductTank social post, story, banner or deck, run its fidelity pipeline, or bootstrap its component library. NEVER trigger automatically on generic design or UI tasks. Invoke explicitly.
+description: Pixel-precise generation locked to the ProductTank Belgium design system (a Mind the Product meetup), with a machine-verified ship gate (render, then pixel diff, then token and microcopy lint through the shared fidelity engine) for social posts and slide decks. Use ONLY when the user explicitly asks to build/reproduce screens in ProductTank Belgium, make a ProductTank social post, story, banner or deck, run its fidelity pipeline, or bootstrap its component library. NEVER trigger automatically on generic design or UI tasks. Invoke explicitly.
 ---
 
-# ProductTank Brussels: design-system fidelity
+# ProductTank Belgium: design-system fidelity
 
-You are in **fidelity mode** for one design system: **ProductTank Brussels**, the Brussels meetup of
+You are in **fidelity mode** for one design system: **ProductTank Belgium**, the Brussels meetup of
 the Mind the Product community. The brand is Mind the Product's (Brand Guide 2024, captured from
 the *MTP Brand Resources 2026* Figma file and mindtheproduct.com); this skill produces the
 community's **social posts** (LinkedIn, Instagram, Meetup, stories, banners) and **slide decks**.
@@ -155,7 +155,7 @@ new numbers), fonts only via `fonts/fonts.css`. Structure: `<main class="canvas"
 data-format="<format>" data-archetype="<archetype>">`, layers in order shapes (0), then photo (1), then copy (2),
 then lockup (3); `data-render-ready` set after `document.fonts.ready`; `data-fig-id` where a captured
 node exists. Typed flexible slots, ≥ 2 lines slack, no fixed text widths beyond the copy column.
-The lockup is an `<img>` from `assets/logo/` (DEC-001, DEC-012: the community is always written "ProductTank Brussels", never "ProductTank Belgium"), 380 px on 1080-wide canvases, 300 on
+The lockup is an `<img>` from `assets/logo/` (DEC-013: the community is always written "ProductTank Belgium", never "ProductTank Brussels"), 380 px on 1080-wide canvases, 300 on
 1200×628, 480 on stories, 420 on slides; never live text. Never reproduce Figma export artifacts
 (micro-skews, `data-node-id`, expiring asset URLs). Taste composes within the vocabulary
 (`ENGINE/references/taste-and-composition.md`); precedence: system constraints > signatures/donts

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 (2026-09-15)
+
+- The community is now "ProductTank Belgium" (decision DEC-013 in the design lock). The logo files
+  `producttank-belgium-midnight.svg` and `producttank-belgium-white.svg` are the default lockup. They
+  keep the ProductTank wordmark and strapline from the official Brussels file and set the word
+  "Belgium" in Montserrat, outlined. The Brussels files stay in the folder.
+- The brand checker now flags "ProductTank Brussels" instead of "ProductTank Belgium".
+- Templates, sample headlines, demo renders and documentation say Belgium.
+
 ## 0.3.0 (2026-09-07)
 
 First public release, exported from the maintainer's working repository.

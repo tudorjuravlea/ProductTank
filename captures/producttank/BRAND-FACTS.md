@@ -1,6 +1,6 @@
 > Public edition: Mind the Product's renders, file keys and node ids are withheld; values and measurements are complete. The Brand Guide itself is Mind the Product's.
 
-# BRAND-FACTS: ProductTank Brussels (a Mind the Product meetup)
+# BRAND-FACTS: ProductTank Belgium (a Mind the Product meetup)
 
 The prose authority for this capture. `design-lock.json` is its machine mirror; if the two disagree,
 this file wins and the lock is stale. Every value states its source and its rung on the engine's
@@ -122,12 +122,10 @@ Lock roles (7-name scale, Montserrat): display 100/700/1.1 · heading 64/700/1.0
   corner"; "Our Logo is always justified to the left-hand side".
 - Files shipped (`assets/logo/`, Figma exports with text outlined, fill `#17044A` or white):
   `producttank-brussels-{midnight,white}.svg` (392×155 viewBox, three lines: ProductTank /
-  Brussels / strapline), `producttank-generic-*` (two lines), `producttank-cityname-*` (template
+  Brussels / strapline), `producttank-belgium-*` (derived from it, DEC-013), `producttank-generic-*` (two lines), `producttank-cityname-*` (template
   with the literal "City Name"), `producttank-wordmark-*` (392×97, wordmark + strapline).
 - MTP wordmark files (pass 2, component (node)): `assets/logo/mtp-wordmark-{midnight,white}.svg`, for the co-branded title lockup "ProductTank / mind the PRODUCT" seen on the 2026 template's mission slide and for MTP-voice canvases (numbers carousel).
-- Default lockup for this community: **ProductTank Brussels** (the official file; owner ruling 2026-09-07, DEC-001 approved). "ProductTank Brussels" is the only written name (DEC-012, owner ruling: "always write Brussels not Belgium"). The
-  community calls itself "ProductTank Brussels" in copy [D survey, LinkedIn]; no official Belgium
-  lockup exists in MTP's repository.
+- Default lockup for this community: **ProductTank Belgium** (owner ruling 2026-09-15, DEC-013: derived from the official Brussels file, "Belgium" in Montserrat wght 440 outlined). "ProductTank Belgium" is the only written name; "ProductTank Brussels" is never written (a venue address may say Brussels). History: DEC-001 (Brussels lockup, Belgium in copy) and DEC-012 (always Brussels) are deprecated. No official Belgium lockup exists in MTP's repository yet; ask the regional coordinator.
 - In the social templates [R, M] the lockup is rendered as live text, white, bottom-left:
   wordmark ≈ 64 px Cera Bold, strapline ≈ 28 px Cera Medium (portrait), left margin 64 px,
   bottom margin 68 px; Community Spotlight puts it top-left with the city line in Regular.
@@ -195,7 +193,7 @@ Lock roles (7-name scale, Montserrat): display 100/700/1.1 · heading 64/700/1.0
 - Design principles that govern copy: one message at a time, one call to action; negative space;
   patterns, break them only to grab attention; KISS.
 - Hashtags observed on the community's channels are not captured; the playbook proposes
-  `#ProductTank #ProductTankBrussels #mindtheproduct #productmanagement` as a starting set
+  `#ProductTank #ProductTankBelgium #mindtheproduct #productmanagement` as a starting set
   (rung 6, flagged in `references/playbook.md`).
 
 ## 8. Formats and measured template geometry [R, M; rung 1 renders, measurements ±2 px; Figma-measured values from pass 2 in the FIG paragraph]
@@ -266,8 +264,8 @@ story. The 8 px rhythm [G 1.4] governs the shipped scale.
 
 | Fact | Value | Source |
 |---|---|---|
-| Community name in copy | ProductTank Brussels | [D] survey title, LinkedIn cover file names |
-| Official lockup | ProductTank Brussels (owner ruling 2026-09-07; the community name "ProductTank Brussels" is used in copy) | [R] city logo repository, owner |
+| Community name in copy | ProductTank Belgium | owner ruling 2026-09-15 (DEC-013); [D] survey title and LinkedIn cover file names said Brussels |
+| Lockup | ProductTank Belgium, derived from the official Brussels file (DEC-013) | [R] city logo repository, owner |
 | Registration | Meetup.com event page (required by MTP) | [D co-branding] |
 | Price | Free to attend, always | [W, D] |
 | Format of an evening (Tallinn's template, for reference only) | 2–3 talks of 20 min, networking before and after | [D host proposal] |

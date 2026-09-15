@@ -3,8 +3,8 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 export const CAP = path.join(path.dirname(new URL(import.meta.url).pathname), '..');
-export const LOCKUP = JSON.parse(readFileSync(path.join(CAP, 'lockup.json'), 'utf8')).file; // e.g. producttank-brussels
-export const L = (variant = 'white', width = 380, cls = 'bottom', extraStyle = '') => `<div class="lockup ${cls}" data-slot="lockup"${extraStyle ? ` style="${extraStyle}"` : ''}><img src="../../assets/logo/${LOCKUP}-${variant}.svg" alt="ProductTank Brussels, a Mind the Product meetup" width="${width}"></div>`;
+export const LOCKUP = JSON.parse(readFileSync(path.join(CAP, 'lockup.json'), 'utf8')).file; // e.g. producttank-belgium
+export const L = (variant = 'white', width = 380, cls = 'bottom', extraStyle = '') => `<div class="lockup ${cls}" data-slot="lockup"${extraStyle ? ` style="${extraStyle}"` : ''}><img src="../../assets/logo/${LOCKUP}-${variant}.svg" alt="ProductTank Belgium, a Mind the Product meetup" width="${width}"></div>`;
 export const ready = `<script>document.fonts.ready.then(() => document.querySelector('.canvas').setAttribute('data-render-ready', ''));</script>`;
 export const head = (title, dark = false, extraCss = '') => `<!doctype html>
 <html lang="en"${dark ? ' data-theme="dark"' : ''}><head><meta charset="utf-8"><title>${title}</title>

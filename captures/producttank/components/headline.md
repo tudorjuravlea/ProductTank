@@ -1,6 +1,6 @@
 # headline: statement + highlighted key word
 
-**Structure.** `<h1 class="headline" data-slot="headline">Welcome back: <span class="markup" data-markup="box">Brussels</span></h1>`
+**Structure.** `<h1 class="headline" data-slot="headline">Welcome back: <span class="markup" data-markup="box">Belgium</span></h1>`
 inside `.copy`. The key word may sit on its own line (the renders break after the colon).
 
 **Exact values.** MEASURED: portrait headline ≈ 100 px (cap band 72 px), x = 63, y = 75; line pitch to the

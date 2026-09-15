@@ -15,7 +15,7 @@ T['event-announce-portrait'] = { format: 'social-portrait', archetype: 'event-an
 ${venn(1080, 1350, 'target,full,ring', full(600, 1000, 430) + target(480, 604, 300) + ring(880, 880, 350))}
 ${photo('right:0;bottom:0;width:520px;height:976px')}
 <div class="copy">
-  <h1 class="headline" data-slot="headline">Welcome back:<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline">Welcome back:<br><span class="markup" data-markup="box">Belgium</span></h1>
   <div style="margin-top: var(--space-8)">${facts(['Tuesday 14 October', '18:30'])}${facts(['Venue name, Brussels'])}</div>
   <p class="body medium" data-slot="rsvp" style="margin-top: var(--space-6)">Free to attend. RSVP on Meetup.</p>
 </div>
@@ -27,7 +27,7 @@ T['event-announce-square'] = { format: 'social-square', archetype: 'event-announ
 ${venn(1080, 1080, 'target,full,ring', full(760, 1080, 420) + target(810, 640, 270) + ring(1080, 1000, 320))}
 ${photo('right:0;bottom:0;width:440px;height:760px')}
 <div class="copy">
-  <h1 class="headline" data-slot="headline">Welcome<br>back:<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline">Welcome<br>back:<br><span class="markup" data-markup="box">Belgium</span></h1>
   <div style="margin-top: var(--space-8)">${facts(['Tuesday 14 October', '18:30'])}</div>
   <p class="body medium" data-slot="rsvp" style="margin-top: var(--space-4)">Free to attend. RSVP on Meetup.</p>
 </div>
@@ -39,7 +39,7 @@ T['event-announce-landscape'] = { format: 'social-landscape', archetype: 'event-
 ${venn(1200, 628, 'target,full,ring', full(736, 512, 128) + target(800, 296, 192) + ring(1064, 560, 232))}
 ${photo('right:0;bottom:0;width:352px;height:560px')}
 <div class="copy" style="right: 400px">
-  <h1 class="headline" data-slot="headline" style="font-size: 64px">Welcome back: <span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline" style="font-size: 64px">Welcome back: <span class="markup" data-markup="box">Belgium</span></h1>
   <div style="margin-top: var(--space-5)">${facts(['Tuesday 14 October', '18:30', 'Venue name'])}</div>
   <p class="body-sm medium" data-slot="rsvp" style="margin-top: var(--space-3)">Free to attend. RSVP on Meetup.</p>
 </div>
@@ -53,7 +53,7 @@ ${photo('left:200px;right:200px;bottom:120px;height:760px', 'Subject photo slot:
 <div class="copy" style="top: var(--space-64)">
   ${L('white', 480, 'top').replace('class="lockup top"', 'class="lockup top" style="position:relative;left:0;top:0"')}
   <div class="highlight" data-slot="highlight" style="margin-top: var(--space-10)"><span>Tuesday 14 October</span><span>18:30 – 21:00</span></div>
-  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-8)">Welcome back, <span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-8)">Welcome back, <span class="markup" data-markup="box">Belgium</span></h1>
   <p class="subheading" style="margin-top: var(--space-6)">Two talks and a room full of product people.</p>
   <p class="body medium" data-slot="rsvp" style="margin-top: var(--space-6)">Free to attend. RSVP on Meetup.</p>
 </div>
@@ -185,7 +185,7 @@ T['recap-thanks-portrait'] = { format: 'social-portrait', archetype: 'recap-than
 ${venn(1080, 1350, 'target,full,ring', full(900, 1200, 300) + target(940, 260, 200) + ring(160, 700, 220)).replace('class="layer-shapes"', 'class="layer-shapes" style="z-index:2;opacity:.9"')}
 <div class="copy">
   <span class="pill" data-slot="label">Recap</span>
-  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-6)">Thank you,<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-6)">Thank you,<br><span class="markup" data-markup="box">Belgium</span></h1>
   <div style="display:flex;gap:var(--space-24);margin-top: var(--space-12)" data-slot="stats">
     <div data-slot="stat"><p class="stat-number" style="font-size: var(--space-40)">84</p><p class="body">product people</p></div>
     <div data-slot="stat"><p class="stat-number" style="font-size: var(--space-40)">2</p><p class="body">talks</p></div>
@@ -201,7 +201,7 @@ T['recap-thanks-landscape'] = { format: 'social-landscape', archetype: 'recap-th
 ${venn(1200, 628, 'target,full,ring', full(1100, 560, 200) + target(1000, 160, 150) + ring(760, 600, 170)).replace('class="layer-shapes"', 'class="layer-shapes" style="z-index:2;opacity:.9"')}
 <div class="copy" style="right: 480px">
   <span class="pill" data-slot="label">Recap</span>
-  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-4)">Thank you,<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline" style="margin-top: var(--space-4)">Thank you,<br><span class="markup" data-markup="box">Belgium</span></h1>
   <p class="body" data-slot="thanks" style="margin-top: var(--space-6)">84 product people, two talks, one host to thank. Slides are on the Meetup page.</p>
 </div>
 ${L('white', 330)}
@@ -242,7 +242,7 @@ ${shape('venniverse-chevron.svg', 'position:absolute;left:480px;bottom:0;width:2
 ${shape('markup-plus.svg', 'position:absolute;right:80px;top:200px;width:120px;height:120px;color:var(--action)', 'data-markup="plus"')}
 ${L('white', 380, 'top')}
 <div class="copy" style="top: 320px">
-  <h1 class="headline" data-slot="headline">ProductTank<br>Brussels 2026<br>in numbers</h1>
+  <h1 class="headline" data-slot="headline">ProductTank<br>Belgium 2026<br>in numbers</h1>
 </div>
 </main>${ready}</body></html>` };
 
@@ -264,7 +264,7 @@ T['event-banner-1600x900'] = { format: 'event-banner', archetype: 'event-banner'
 <figure class="photo textural" data-slot="photo" style="left:50%"><img src="../../assets/shapes/photo-slot-subject.svg" alt="Textural photo slot: a full-bleed scene takes the tritone wash on the right half"></figure>
 ${venn(1600, 900, 'target,full,ring', target(1300, 560, 400) + full(1560, 900, 220) + ring(1000, 880, 200)).replace('class="layer-shapes"', 'class="layer-shapes" style="z-index:2"')}
 <div class="copy" style="top: 304px; right: 800px">
-  <h1 class="headline" data-slot="headline">Welcome back:<br><span class="markup" data-markup="box">Brussels</span></h1>
+  <h1 class="headline" data-slot="headline">Welcome back:<br><span class="markup" data-markup="box">Belgium</span></h1>
   <div style="margin-top: var(--space-8)">${facts(['Tuesday 14 October', '18:30'])}</div>
 </div>
 ${L('white', 420)}
@@ -290,7 +290,7 @@ if (process.argv.includes('--register')) {
   for (const [id, t] of Object.entries(T)) {
     if (keep.find((s) => s.id === id)) continue;
     const f = formats[t.format];
-    keep.push({ id, mode: 'B2', netNew: true, captureWidth: f.width, captureHeight: f.height, dpr: 1, colorScheme: t.dark ? 'dark' : 'light', url: `templates/social/${id}.html`, stateContract: `${t.archetype} template with typed sample copy; Brussels lockup; no photo (slot only)`, locales: ['en'], note: `archetype=${t.archetype} format=${t.format}; tear-down reference: ${f.reference || 'none'}` });
+    keep.push({ id, mode: 'B2', netNew: true, captureWidth: f.width, captureHeight: f.height, dpr: 1, colorScheme: t.dark ? 'dark' : 'light', url: `templates/social/${id}.html`, stateContract: `${t.archetype} template with typed sample copy; Belgium lockup; no photo (slot only)`, locales: ['en'], note: `archetype=${t.archetype} format=${t.format}; tear-down reference: ${f.reference || 'none'}` });
   }
   keep.sort((a, b) => a.id.localeCompare(b.id));
   lock.screens = keep;

@@ -1,4 +1,4 @@
-# Voice: how ProductTank Brussels sounds
+# Voice: how ProductTank Belgium sounds
 
 Source: Brand Guide 2024 §1.2 Personality, §1.3 Tone of voice, §1.4 Design principles (captured
 verbatim in `captures/producttank/BRAND-FACTS.md` §7). The lock's `content.voiceChart` carries

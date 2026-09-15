@@ -297,7 +297,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/call-for-portrait.html",
-      "stateContract": "call-for template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "call-for template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -312,7 +312,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/call-for-square.html",
-      "stateContract": "call-for template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "call-for template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -372,7 +372,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/event-announce-landscape.html",
-      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-announce template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -387,7 +387,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/event-announce-portrait.html",
-      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-announce template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -402,7 +402,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/event-announce-square.html",
-      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-announce template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -417,7 +417,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/social/event-announce-story.html",
-      "stateContract": "event-announce template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-announce template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -432,7 +432,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/event-banner-1600x900.html",
-      "stateContract": "event-banner template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-banner template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -447,7 +447,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/social/event-promo-landscape.html",
-      "stateContract": "event-promo template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-promo template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -462,7 +462,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/social/event-promo-portrait.html",
-      "stateContract": "event-promo template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "event-promo template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -477,7 +477,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/lineup-portrait.html",
-      "stateContract": "lineup template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "lineup template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -492,7 +492,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/lineup-square.html",
-      "stateContract": "lineup template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "lineup template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -507,7 +507,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/linkedin-cover.html",
-      "stateContract": "linkedin-cover template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "linkedin-cover template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -522,7 +522,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/quote-portrait.html",
-      "stateContract": "quote template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "quote template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -537,7 +537,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/recap-thanks-landscape.html",
-      "stateContract": "recap-thanks template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "recap-thanks template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -552,7 +552,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/recap-thanks-portrait.html",
-      "stateContract": "recap-thanks template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "recap-thanks template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -567,7 +567,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/reminder-portrait.html",
-      "stateContract": "reminder template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "reminder template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -582,7 +582,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/social/reminder-story.html",
-      "stateContract": "reminder template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "reminder template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -597,7 +597,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/agenda.html",
-      "stateContract": "slide layout 'agenda' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'agenda' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -612,7 +612,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/closing.html",
-      "stateContract": "slide layout 'closing' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'closing' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -627,7 +627,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/community.html",
-      "stateContract": "slide layout 'community' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'community' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -642,7 +642,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/slides/cover.html",
-      "stateContract": "slide layout 'cover' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'cover' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -657,7 +657,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/host-sponsor.html",
-      "stateContract": "slide layout 'host-sponsor' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'host-sponsor' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -672,7 +672,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/panel.html",
-      "stateContract": "slide layout 'panel' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'panel' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -687,7 +687,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/speaker.html",
-      "stateContract": "slide layout 'speaker' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'speaker' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -702,7 +702,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/talk-title.html",
-      "stateContract": "slide layout 'talk-title' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'talk-title' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -717,7 +717,7 @@
       "dpr": 1,
       "colorScheme": "dark",
       "url": "templates/slides/welcome.html",
-      "stateContract": "slide layout 'welcome' with typed sample copy; Brussels lockup; photo/logo/QR slots only",
+      "stateContract": "slide layout 'welcome' with typed sample copy; Belgium lockup; photo/logo/QR slots only",
       "locales": [
         "en"
       ],
@@ -732,7 +732,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/speaker-spotlight-landscape.html",
-      "stateContract": "speaker-spotlight template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "speaker-spotlight template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -747,7 +747,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/speaker-spotlight-portrait.html",
-      "stateContract": "speaker-spotlight template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "speaker-spotlight template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -762,7 +762,7 @@
       "dpr": 1,
       "colorScheme": "light",
       "url": "templates/social/stat-square.html",
-      "stateContract": "stat template with typed sample copy; Brussels lockup; no photo (slot only)",
+      "stateContract": "stat template with typed sample copy; Belgium lockup; no photo (slot only)",
       "locales": [
         "en"
       ],
@@ -935,8 +935,8 @@
     "bannedJargon": {
       "en": [
         {
-          "term": "ProductTank Belgium",
-          "replacement": "ProductTank Brussels"
+          "term": "ProductTank Brussels",
+          "replacement": "ProductTank Belgium"
         },
         {
           "term": "PMs",
@@ -1106,10 +1106,19 @@
       "id": "DEC-012",
       "date": "2026-09-07",
       "scope": "content",
-      "decision": "The community is always written 'ProductTank Brussels', in copy as in the lockup. 'ProductTank Belgium' is never written on a canvas, in a caption or on a slide.",
+      "decision": "The community is always written 'ProductTank Brussels', in copy as in the lockup. 'ProductTank Belgium' is never written on a canvas, in a caption or on a slide. DEPRECATED 2026-09-15: replaced by DEC-013 (always \"ProductTank Belgium\").",
       "rationale": "Owner ruling 2026-09-07 evening: 'Let's always write Brussels not Belgium.' Matches the official lockup and MTP's one-city naming.",
-      "status": "approved",
+      "status": "deprecated",
       "supersedes": "DEC-001"
+    },
+    {
+      "id": "DEC-013",
+      "date": "2026-09-15",
+      "scope": "global",
+      "decision": "The community is 'ProductTank Belgium', in the lockup as in copy. The lockup is assets/logo/producttank-belgium-{midnight,white}.svg: the ProductTank wordmark and the strapline are the untouched outlines from Mind the Product's Brussels file; the word 'Belgium' is set in Montserrat (variable, wght 440) and outlined, matched to the Brussels glyphs on cap height (41.58 px in the 392x155 viewBox), baseline (y 106), left edge (x 5.73) and stem width (4.8 px against 4.85). 'ProductTank Brussels' is never written on a canvas, in a caption or on a slide; a venue address may still say Brussels. The Brussels file stays in assets/logo as Mind the Product's official reference.",
+      "rationale": "Owner ruling 2026-09-15: 'I need a logo that says ProductTank Belgium and this is how we will call it from now on instead of ProductTank Brussels.' No official Belgium file exists in MTP's logo repository, so the city line is set in the organiser face (DEC-002) at the closest optical weight to the Cera Pro Regular original; ask MTP's regional coordinator for an official file and drop it in when it exists.",
+      "status": "approved",
+      "supersedes": "DEC-012"
     }
   ],
   "imagery": {

@@ -4,7 +4,7 @@ Make social posts and slide decks for a ProductTank meetup. The posts and decks 
 Mind the Product brand. A machine checks each one before you use it.
 
 ProductTank meetups are free events for product people. Mind the Product runs the ProductTank
-network. This tool was made for ProductTank Brussels. Any ProductTank can use it.
+network. This tool was made for ProductTank Belgium. Any ProductTank can use it.
 
 ![Example: a LinkedIn post made with this tool](docs/demo-linkedin-post-2026-10-08.png)
 
@@ -15,8 +15,8 @@ network. This tool was made for ProductTank Brussels. Any ProductTank can use it
 - The brand rules as data: colours, type, spacing, the logo rules, the words to use.
 - A checker with 16 brand rules. Each rule has a test that proves the rule can fail.
 - A renderer. It makes PNG, PDF and PowerPoint files.
-- The official ProductTank Brussels logo files and the Mind the Product shapes. Mind the Product
-  gave permission to include them.
+- The ProductTank Belgium and ProductTank Brussels logo files and the Mind the Product shapes.
+  Mind the Product gave permission to include them.
 
 You do not need to know code. You give the facts of the event. The tool makes the canvas. A canvas
 is one picture at the size a channel needs, for example a LinkedIn post or a slide. If you do not
@@ -40,7 +40,7 @@ You need:
 - Node 20 or newer. To check, open a terminal and type `node --version`.
 - Git.
 - Claude Code, or another AI agent that can read a `SKILL.md` file.
-- For a city that is not Brussels: your city's ProductTank logo files. Ask your regional
+- For a city that is not Belgium: your city's ProductTank logo files. Ask your regional
   coordinator at Mind the Product.
 
 ## Install
@@ -103,7 +103,7 @@ Without an agent:
 
 ## Use your city's logo
 
-The Brussels logo is included. For a different city:
+The Belgium logo is included. For a different city:
 
 1. Get the files `ProductTank-logo-<City>-midnight.svg` and `ProductTank-logo-<City>-white.svg`
    from Mind the Product.
@@ -115,7 +115,7 @@ The Brussels logo is included. For a different city:
    ```bash
    cd captures/producttank && node templates/social/_build.mjs --register && node templates/slides/_build.mjs --register
    ```
-5. Some sample headlines say "Brussels". Change that word in the templates you use.
+5. Some sample headlines say "Belgium". Change that word in the templates you use.
 
 Note: the logo must be white or midnight. It must be on the left side, at the top or at the bottom.
 Do not change its colour. Do not rotate it. Do not type it again in a font.
