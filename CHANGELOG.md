@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.0 (2026-09-16)
+
+- The hosted MCP server is live at `https://mcp.product.brussels/mcp`. It is open, read only,
+  and serves every chapter by name. The README explains how to add it in Claude, ChatGPT and
+  Gemini, and gives example prompts for organisers.
+
 ## 0.9.0 (2026-09-15)
 
 - A third ground beside Bold Cyan and Black: the Gradient ground (`.canvas.ground-gradient`,

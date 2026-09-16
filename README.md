@@ -17,6 +17,8 @@ network. This tool was made for ProductTank Belgium. Any ProductTank can use it.
 - A renderer. It makes PNG, PDF and PowerPoint files.
 - The ProductTank Belgium and ProductTank Brussels logo files and the Mind the Product shapes.
   Mind the Product gave permission to include them.
+- A hosted server at `mcp.product.brussels`. It gives the same brand rules, templates, logos and
+  checker to Claude, ChatGPT and Gemini, with no install. See "Use the hosted server".
 
 You do not need to know code. You give the facts of the event. The tool makes the canvas. A canvas
 is one picture at the size a channel needs, for example a LinkedIn post or a slide. If you do not
@@ -30,7 +32,8 @@ give a fact, the tool leaves an empty slot. It does not invent a date, a place o
 4. The renderer makes the picture. You look at the picture. You approve it.
 
 The agent reads its instructions from `SKILL.md`. The checks run on your computer. Nothing is sent
-to a server.
+to a server. If you use the hosted server instead, your agent reads the brand from it, and only
+the HTML you ask it to check is sent.
 
 ## Before you start
 
@@ -100,6 +103,106 @@ Without an agent:
    ```
 5. Open the PNG file in the `out` folder. Look at it. If it is not correct, change the copy and do
    steps 3 and 4 again.
+
+## Use the hosted server
+
+The hosted server is an MCP server. MCP is a standard way for an AI agent to read tools and data.
+The server gives your agent the brand rules, the colour and type tokens, all the templates, the
+logo files, the Montserrat font, the organiser guides and the brand checker. It is read only. It
+does not make pictures. Your agent writes the HTML, and the checker on the server tells the agent
+what is wrong.
+
+The address is:
+
+```
+https://mcp.product.brussels/mcp
+```
+
+It is free and open. It has no password. To see if it is up, open
+`https://mcp.product.brussels/healthz` in a browser. You want `"ok":true`.
+
+The server works for every ProductTank. It asks your agent for the name of your chapter, for
+example "Lisbon". It then gives you the logo and the words for that chapter. Say the chapter in
+your first message.
+
+The hosted server is good for text, plans and drafts in a chat. For finished pictures with the
+full checks, use the skill in this repository with Claude Code.
+
+### In Claude
+
+Claude Code, in a terminal, one command:
+
+```bash
+claude mcp add --transport http producttank https://mcp.product.brussels/mcp
+```
+
+Claude on the web or the desktop app, on a paid plan:
+
+1. Open Settings, then Connectors.
+2. Click "Add custom connector".
+3. Name: `ProductTank`. URL: `https://mcp.product.brussels/mcp`. Leave the other fields empty.
+4. Click Add. In a new chat, open the tools menu and turn ProductTank on.
+
+### In ChatGPT
+
+You need a paid ChatGPT plan. On a Business or Enterprise plan, an admin must allow custom
+connectors first.
+
+1. Open Settings, then Connectors, then Advanced. Turn on "Developer mode".
+2. Go back to Connectors. Click Create.
+3. Name: `ProductTank`. MCP server URL: `https://mcp.product.brussels/mcp`.
+   Authentication: "No authentication". Click Create.
+4. In a new chat, open the plus menu, choose Developer mode, and tick ProductTank.
+
+### In Gemini
+
+The Gemini CLI, in a terminal, one command:
+
+```bash
+gemini mcp add --transport http producttank https://mcp.product.brussels/mcp
+```
+
+If your version of the CLI does not have that command, add this to `~/.gemini/settings.json`:
+
+```json
+{ "mcpServers": { "producttank": { "httpUrl": "https://mcp.product.brussels/mcp" } } }
+```
+
+The Gemini app on the web and on the phone does not let you add your own MCP server at the time
+of writing. Use the Gemini CLI, or an agent that does.
+
+### What to ask for
+
+Start every chat with your chapter name. The server refuses to answer without it. Then say what
+you need and give the facts. The agent leaves a slot empty for a fact you do not give. It must not
+invent a date, a place, a speaker or a number.
+
+Examples, one per line. Change the city and the facts.
+
+- "I organise ProductTank Lisbon. Read the brand rules from the ProductTank server and tell me the
+  colours, the font and the rules for the logo."
+- "ProductTank Belgium. Write a LinkedIn teaser for our meetup on Thursday 8 October in
+  Antwerpen. One speaker is confirmed: <name>, <role> at <company>. The second speaker is not
+  confirmed. Use the voice guide from the server."
+- "ProductTank Manchester. Show me the list of social templates on the server and tell me which
+  one fits a speaker announcement with a photo."
+- "ProductTank Lisbon. Get the template `pt-template-social-speaker-tease-square` from the server
+  and fill the slots: name <name>, role Head of Product at <company>, date Tuesday 3 November.
+  Leave the talk title empty. Then check the result with the server's `lint_html` tool and fix
+  every error it reports."
+- "ProductTank San Francisco. Write the text for the Meetup event page for a panel on pricing.
+  Three panellists, names to follow. Doors at 6 pm, free, registration on Meetup. Follow the
+  playbook on the server."
+- "ProductTank Belgium. Make an agenda slide for the 8 October meetup: doors 18:00, talk one
+  18:35, break 19:20, talk two 19:35, networking until 21:00. Start from the agenda slide template
+  on the server and check it before you show it to me."
+- "ProductTank Berlin. Here is the HTML of a post a volunteer made. Check it with `lint_html` on
+  the server and list what breaks the brand."
+- "ProductTank Lisbon. Get the white Lisbon logo from the server as an SVG and tell me the
+  minimum size and the margin rules."
+
+For a chapter that is not Belgium, the server draws the logo in the same font as the Belgium file.
+If Mind the Product has an official file for your city, use that file in the skill instead.
 
 ## Use your city's logo
 
