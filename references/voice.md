@@ -15,11 +15,24 @@ guide". Humour that punches at the craft, not at people.
   "PMs" unless quoting a title. "product manager" in full when the role matters.
 - "meetup", one word; "RSVP on Meetup" is the call to action.
 - UK spelling by default (organise, colour, programme); either is fine if consistent within a piece.
+- City names in English, always: Antwerp, Brussels, Ghent, Leuven; never Antwerpen, Bruxelles, Gent (owner ruling, 2026-09-29, DEC-021).
 - Gender neutral: they, them, the speaker, the host.
 - Neutral point of view for the community voice; signed opinions belong to the person who holds them.
 
 **Dates and times:** spell the month out, always: "Tuesday 14 October", never "14/10". 24 h time
-("18:30"). Year only when it is not obvious.
+("18:30"). Year only when it is not obvious. Doors are a sentence, not a label: "Doors open at
+18:00", never "Doors 18:00" (owner ruling, 2026-09-16).
+
+**Arrangement of facts and lines** (organiser rulings, 2026-09-21, DEC-020):
+- A weekday goes with the date ("Thursday 8 October") or nowhere; never beside a location pin
+  ("Thursday, Antwerp" reads wrong).
+- Print and flyer copy carries the start time as a fact: "Doors open at 18:00".
+- The facts line holds place and time; "Free to attend" starts a new line of its own, never tucked
+  after the location.
+- In a call-to-action card, one sentence per line: "Scan the code to RSVP on Meetup." then
+  "Free to attend, as always." on the line below. Never run two sentences together on one line.
+- When the date is the message, it sits inside the headline on the markup ("Guess who's back on
+  8 October"), at the headline's own size.
 
 **Headlines:** sentence case, one message. Caps only in the label pill and the text highlight.
 The Oxford comma stays ("speakers, hosts, and sponsors").

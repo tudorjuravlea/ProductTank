@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.12.1 (2026-10-08)
+
+- `tools/export-pptx-editable.mjs`: one rendered canvas as an editable widescreen PowerPoint slide, native shapes and text boxes, measured from the DOM.
+- `tools/portrait.py` with `tools/portrait/cutface.swift`: round team and speaker portraits on brand grounds, heads at one scale, the batch matched for brightness and sharpness (`components/portrait.md`, DEC-023). macOS only.
+- DEC-021: city names in English (Antwerp); pt-lint rule `city-english-names`, 17 rules.
+- DEC-022: a QR code and a bare address may appear on a slide shown in the room, never on a social canvas.
+- Format `luma-cover` (2100x600, 3.5:1) for a lu.ma calendar page.
+
+## 0.11.1 (2026-09-21)
+
+- DEC-020: facts and lines in a fixed arrangement (weekday with the date or nowhere, "Free to attend" on its own line, "Doors open at 18:00" on print, one sentence per line in a call-to-action card), in `references/voice.md` and `components/facts-row.md`.
+- `tools/print-pdf.mjs` flattens the markup box for print; PDF readers broke on the CSS mask.
+
+## 0.11.0 (2026-09-21)
+
+- Print formats `flyer-a6` (1311x1819) and `flyer-a6-landscape` with 3 mm bleed (DEC-019), a `.qr-card`, and `tools/print-pdf.mjs` for vector PDFs with the font embedded.
+- Facts rows without dot separators, whitespace only (DEC-018).
+
 ## 0.10.0 (2026-09-16)
 
 - The hosted MCP server is live at `https://mcp.product.brussels/mcp`. It is open, read only,

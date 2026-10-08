@@ -46,8 +46,11 @@ invented (DEC-006).
 | `story` | 1080×1920 | Instagram / LinkedIn stories, WhatsApp status |
 | `event-banner` | 1600×900 | LinkedIn event / Meetup cover, deck cover |
 | `linkedin-cover` | 2256×382 | LinkedIn page cover |
+| `luma-cover` | 2100×600 | lu.ma calendar page cover, 3.5:1 |
 | `slide` | 1920×1080 | deck slides |
 | `badge-a6` | 1240×1748 | A6 name badge at 300 dpi (DEC-016) |
+| `flyer-a6` | 1311×1819 | A6 print flyer with 3 mm bleed, 111×154 mm at 300 dpi, trims to 105×148; PDF via `tools/print-pdf.mjs` (DEC-019) |
+| `flyer-a6-landscape` | 1819×1311 | the same flyer, landscape: 154×111 mm, trims to 148×105 (DEC-019) |
 
 **Archetypes** (`CAPTURE/templates/social/<archetype>-<format>.html`): `event-announce`
 (portrait, square, landscape, story; Bold Cyan, the MTP-central evergreen), `event-promo`
@@ -132,7 +135,7 @@ carry `netNew: true` and are honestly reported as "lint, render, geometry ok; no
 
 Anatomy library first: before composing any region, read `CAPTURE/components/INDEX.md` and the
 spec it points to (lockup, headline, facts-row, venn, markup, label-pill, text-highlight,
-photo-cutout, stat) and build from its exact values; the measured numbers are in
+photo-cutout, portrait, stat) and build from its exact values; the measured numbers are in
 `CAPTURE/BRAND-FACTS.md` §8. Shapes: `CAPTURE/assets/shapes/INDEX.md`. Every gap is named in the
 report as a capture task, never improvised.
 
@@ -188,8 +191,8 @@ Run from `CAPTURE` (the lock's directory):
 
 1. **Content/compliance lint**: `node ENGINE/scripts/adherence-lint.mjs --lock design-lock.json --src templates`
    then the brand linter `node SKILL/tools/pt-lint.mjs --lock design-lock.json --src <file|dir>`
-   (16 rules: lockup presence/colour/corner/width, one markup, ground, venn recipe, one target,
-   sentence case, PM, brand names, dates, disclosures, URLs, strapline; a `meetup-card` is measured
+   (17 rules: lockup presence/colour/corner/width, one markup, ground, venn recipe, one target,
+   sentence case, PM, brand names, English city names, dates, disclosures, URLs, strapline; a `meetup-card` is measured
    on its inner event card). An ERROR blocks
    regardless of looks.
 2. **Taste self-critique** (yours): Philosophy-alignment / Hierarchy / Craft / Functionality, 0to10
@@ -241,10 +244,12 @@ per hard rule; every fixture in `files` must exist (gauntlet lane `evals-files`)
 | Shapes (venn, markup, Venniverse) | `captures/producttank/assets/shapes/INDEX.md` |
 | Reference renders and their provenance | `captures/producttank/reference/figma/REGISTRATION.md` |
 | Regenerate the templates after a rule change | `captures/producttank/templates/social/_build.mjs --register`, `templates/slides/_build.mjs --register` |
+| Round team or speaker portraits on brand grounds, batch matched | `tools/portrait.py --src <dir> --out <dir>` (components/portrait.md) |
 | Keep base.css masks in sync with the shape files | `tools/sync-shapes-css.mjs` |
 | Second Figma pass (node geometry, official shapes) | `tools/figma-pass-2.mjs` |
 | Survey a PPTX/Google Slides export | `tools/pptx-survey.mjs` |
-| PPTX from rendered slides | `tools/export-pptx.py` |
+| PPTX from rendered slides (one picture per slide) | `tools/export-pptx.py` |
+| One canvas as an editable widescreen PowerPoint slide (native shapes and text) | `tools/export-pptx-editable.mjs --src <canvas.html|dir> --out <dir>` |
 
 ## Hard rules
 

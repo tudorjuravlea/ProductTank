@@ -31,6 +31,7 @@ const fixtures = {
   'headline-sentence-case': clean({ headline: 'WELCOME BACK BELGIUM' }),
   'no-pm-abbrev': clean({ body: 'A night for PMs and designers. Free to attend, RSVP on Meetup.' }),
   'brand-names': clean({ body: 'Product Tank is back. Free to attend, RSVP on Meetup.' }),
+  'city-english-names': clean({ body: 'We meet in Antwerpen this time. Free to attend, RSVP on Meetup.' }),
   'date-month-spelled': clean({ facts: '<li>14/10/2026</li><li>18:30</li>' }),
   'announce-disclosure': clean({ body: 'Two talks, networking before and after.' }),
   'no-external-url': clean({ body: 'Free to attend, RSVP on Meetup: https://www.meetup.com/producttank-brussels' }),

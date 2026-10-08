@@ -22,6 +22,7 @@
 //   headline-sentence-case  [data-slot="headline"] is not all caps
 //   no-pm-abbrev            no "PM"/"PMs" as a word in visible text
 //   brand-names             no "Product Tank", "Mind The Product", "MindTheProduct", "Productank", "ProductTank Brussels" (DEC-013)
+//   city-english-names      cities in English: "Antwerp", never "Antwerpen" (DEC-021)
 //   date-month-spelled      no numeric d/m dates in [data-slot="facts"] or visible text
 //   announce-disclosure     archetype event-announce carries "Free to attend" + "Meetup"; reminder carries "Meetup"; meetup-card carries "Attend on Meetup"
 //   no-external-url         no http(s):// or www. in visible text
@@ -33,7 +34,7 @@ import os from 'node:os';
 
 const ENGINE = process.env.FIDELITY_ENGINE || path.join(os.homedir(), '.claude', 'fidelity-engine');
 const HERE = path.dirname(new URL(import.meta.url).pathname);
-const RULES = ['canvas-declared','lockup-present','lockup-colour','lockup-corner','lockup-min-width','markup-once','yellow-not-ground','venn-recipe','target-once','headline-sentence-case','no-pm-abbrev','brand-names','date-month-spelled','announce-disclosure','no-external-url','strapline-verbatim'];
+const RULES = ['canvas-declared','lockup-present','lockup-colour','lockup-corner','lockup-min-width','markup-once','yellow-not-ground','venn-recipe','target-once','headline-sentence-case','no-pm-abbrev','brand-names','city-english-names','date-month-spelled','announce-disclosure','no-external-url','strapline-verbatim'];
 
 function usage(code = 0) {
   const text = readFileSync(new URL(import.meta.url)).toString().split('\n').filter((l) => l.startsWith('//')).slice(0, 26).map((l) => l.replace(/^\/\/ ?/, '')).join('\n');
@@ -144,6 +145,7 @@ async function lintFile(page, file) {
   if (/\bPMs?\b/.test(text)) add('no-pm-abbrev', 'visible text says "PM"/"PMs"; say product manager / product people');
   const bad = [/Product Tank/, /Mind The Product/, /MindTheProduct/, /Productank/i, /Product-Tank/i, /ProductTank Brussels/i].find((r) => r.test(text));
   if (bad) add('brand-names', `visible text spells a brand name wrong (${bad})`);
+  if (/\bAntwerpen\b/.test(text)) add('city-english-names', 'visible text says "Antwerpen"; cities are written in English: Antwerp (DEC-021)');
   if (/\b\d{1,2}[./]\d{1,2}(?:[./]\d{2,4})?\b/.test(d.factsText + ' ' + text)) add('date-month-spelled', 'a numeric date (d/m) appears; spell out the month');
   if (/^event-announce/.test(arche) && !(/Free to attend/.test(text) && /Meetup/.test(text))) add('announce-disclosure', 'event-announce canvases must say "Free to attend" and mention Meetup');
   if (/^reminder/.test(arche) && !/Meetup/.test(text)) add('announce-disclosure', 'reminder canvases must mention Meetup');

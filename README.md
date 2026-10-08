@@ -182,7 +182,7 @@ Examples, one per line. Change the city and the facts.
 - "I organise ProductTank Lisbon. Read the brand rules from the ProductTank server and tell me the
   colours, the font and the rules for the logo."
 - "ProductTank Belgium. Write a LinkedIn teaser for our meetup on Thursday 8 October in
-  Antwerpen. One speaker is confirmed: <name>, <role> at <company>. The second speaker is not
+  Antwerp. One speaker is confirmed: <name>, <role> at <company>. The second speaker is not
   confirmed. Use the voice guide from the server."
 - "ProductTank Manchester. Show me the list of social templates on the server and tell me which
   one fits a speaker announcement with a photo."
@@ -239,6 +239,9 @@ folder.
 | Make pictures of the deck and a PDF | `node ../../tools/render-batch.mjs --lock design-lock.json --deck templates/slides --out .render/slides` |
 | Show all pictures on one sheet | `node ../../tools/contact-sheet.mjs --dir .render/social` |
 | Make a PowerPoint file from the pictures | `uvx --with python-pptx --with pillow python ../../tools/export-pptx.py .render/slides deck.pptx` |
+| Make one canvas an editable PowerPoint slide | `node ../../tools/export-pptx-editable.mjs --src templates/slides/cover.html --out .render/pptx` |
+| Print a flyer as a vector PDF | `node ../../tools/print-pdf.mjs --src <flyer.html> --out .render/print --width 111mm --height 154mm` |
+| Round portraits of a team on brand grounds (macOS) | `python3 ../../tools/portrait.py --src <photos> --out <dir>` |
 | Save an approved picture as the reference for pixel checks | `node ../../tools/arm-reference.mjs --lock design-lock.json --screen <id> --approved-by "<name>"` |
 | Make the templates again after a rule change | `node templates/social/_build.mjs --register && node templates/slides/_build.mjs --register` |
 | Update the CSS masks after a shape change | `node ../../tools/sync-shapes-css.mjs` |

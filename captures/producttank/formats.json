@@ -6,6 +6,9 @@
   "story":            { "width": 1080, "height": 1920, "use": "Instagram / LinkedIn stories, WhatsApp status; keep content out of the top 250 px and bottom 300 px", "reference": "reference/figma/mtp_story_producttank_worldproductday_1200.png" },
   "event-banner":     { "width": 1600, "height": 900,  "use": "LinkedIn event / Meetup cover, deck cover", "reference": "reference/figma/mtp-producttank-slidecover.png" },
   "linkedin-cover":   { "width": 2256, "height": 382,  "use": "LinkedIn page cover (2x of 1128x191)", "reference": "reference/figma/mtp-producttank-linkedin_cover_image.png" },
+  "luma-cover":       { "width": 2100, "height": 600,  "use": "lu.ma calendar page cover, 3.5:1", "reference": null },
   "slide":            { "width": 1920, "height": 1080, "use": "deck slides (16:9)", "reference": null },
-  "badge-a6":         { "width": 1240, "height": 1748, "use": "event name badge, A6 portrait at 300 dpi, no bleed (DEC-016)", "reference": null }
+  "badge-a6":         { "width": 1240, "height": 1748, "use": "event name badge, A6 portrait at 300 dpi, no bleed (DEC-016)", "reference": null },
+  "flyer-a6":         { "width": 1311, "height": 1819, "use": "A6 print flyer with bleed: 111 x 154 mm at 300 dpi, trims to 105 x 148 mm (35 px bleed each side), keep copy 35 px inside the trim (DEC-019)", "reference": null },
+  "flyer-a6-landscape": { "width": 1819, "height": 1311, "use": "A6 print flyer, landscape, with bleed: 154 x 111 mm at 300 dpi, trims to 148 x 105 mm (DEC-019)", "reference": null }
 }

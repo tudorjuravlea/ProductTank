@@ -1490,6 +1490,10 @@
         {
           "term": "link in bio",
           "replacement": "RSVP on Meetup"
+        },
+        {
+          "term": "Antwerpen",
+          "replacement": "Antwerp"
         }
       ]
     },
@@ -1675,6 +1679,54 @@
       "scope": "global: grounds",
       "decision": "A third ground joins Bold Cyan and Black: the Gradient ground, `.canvas.ground-gradient`, replicated from the owner's three reference posts, which share one ground: a linear gradient at 135 degrees (top-left to bottom-right) from #3E67E7 (0 %) through #3530AE (50 %) to Midnight #17044A (100 %). The two measured stops are declared as tokens of this decision in base.css (`--ground-gradient-start`, `--ground-gradient-mid`); the end stop is the Midnight token. Text on it is White, the markup word stays Midnight on Markup Yellow, the venn keeps its colours, the lockup is the White file. It is the one gradient allowed beside the tritone photo wash. Templates ship a `-gradient` twin for the eight programme layouts (DEC-016) and the four chapter layouts that came from gradient references (speaker-tease, team-member, carousel-cover, lineup-columns).",
       "rationale": "Owner ruling 2026-09-15: \"I love the smooth gradients and the more premium look of these; can we have a third core alternative along the lighter blue and dark blue?\", then \"replicate the exact gradients, don't invent a new one\". Sampled from the three references (1280x1600, identical ground): top-left #3D66E6, top-right #3B39C0, left edge mid #4240D2 to bottom #2D2594, right edge mid #2A1F88, centre #352FAB, bottom-right corner #17064C, which is the Midnight token within rounding. Signature 3 and don't 13 read with this decision, as they already do with DEC-010 for Black.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-018",
+      "date": "2026-09-16",
+      "scope": "component: facts-row",
+      "decision": "The facts row carries no separator between its items: no Zingy Cyan dot, no bar. Items are separated by the row gap alone (`.facts { gap }` in base.css, widened to `--space-8`). The icon variant keeps its icons. Applies to every format and archetype; templates regenerated.",
+      "rationale": "Owner ruling 2026-09-16 on the 8 October teaser: \"remove the light blue dots between the date, time and place\", then \"switch off the dots in the rules as well not only for this canvas\". The dots were an inference from the website's separators (facts-row.md), never a measured brand value, so nothing in the lock's signatures or donts reads differently.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-019",
+      "date": "2026-09-21",
+      "scope": "format: flyer-a6, flyer-a6-landscape",
+      "decision": "A print format `flyer-a6`: 1311 x 1819 px = 111 x 154 mm at 300 dpi, the printer's file size for an A6 flyer with 3 mm bleed; trims to 105 x 148 mm. The canvas edge is the bleed edge, shapes bleed off it, copy stays at least 35 px (3 mm) inside the trim (margin 144 px). Exported to PDF at 111 x 154 mm by tools/print-pdf.mjs. A QR code is allowed on print canvases only (`.qr-card`, Midnight modules on a White card, derived art), because the printed page cannot carry a link; the no-URL rule still holds for the visible text. A landscape twin `flyer-a6-landscape` (1819 x 1311 px = 154 x 111 mm) follows the same rules.",
+      "rationale": "Owner brief 2026-09-21: A6 flyers for the 8 October meetup to the printer's template (Bestandsformaat 111 x 154, Eindformaat 105 x 148, afloop 3 mm, veiligheidsmarge 3 mm) with a QR to the Meetup event. The badge format (DEC-016) has no bleed, so a second A6 format was needed.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-020",
+      "date": "2026-09-21",
+      "scope": "content: facts and line breaks",
+      "decision": "Facts are arranged in a fixed order and on fixed lines: date (with its weekday, or none), time, place on the first line; 'Free to attend' on its own line below, never after the place; a weekday never sits beside a location pin; print copy carries the start time as 'Doors open at 18:00'; a call-to-action card sets one sentence per line ('Scan the code to RSVP on Meetup.' / 'Free to attend, as always.'); when the date is the message it lives inside the headline on the markup at the headline size.",
+      "rationale": "Fellow organiser's review of the 8 October flyers (2026-09-21): 'drop Thursday, it's odd behind a location icon', 'maybe add the start time', 'start a new line with Free to attend', then the owner: the card's second sentence on a new line, and the same on every dated flyer. Recorded in voice.md and facts-row.md so the skill and the served MCP items carry it.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-021",
+      "date": "2026-09-29",
+      "scope": "content: city names",
+      "decision": "City names are written in English on every canvas and caption: Antwerp, Brussels, Ghent, Leuven. Never the Dutch or French forms (Antwerpen, Bruxelles, Gent). pt-lint rule city-english-names blocks 'Antwerpen'.",
+      "rationale": "Owner ruling of 2026-09-29 ('always use Antwerp instead of Antwerpen') after the lu.ma cover and share image were set that way; the community writes in English and the pin row should read as one language.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-022",
+      "date": "2026-10-07",
+      "scope": "content: QR and address on room slides",
+      "decision": "A QR code and a bare address (no scheme, no www) may appear on a slide that is shown in the room, for the feedback form or an RSVP page; they stay banned on social canvases. The QR is an inline svg.qr inside a white .qr-card with Midnight modules.",
+      "rationale": "Owner asked for a closing feedback slide with the form's QR and address (2026-10-07). Extends DEC-019 (print) to slides, where the audience scans the screen; social canvases keep the link in the post.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-023",
+      "date": "2026-10-08",
+      "scope": "component: portrait",
+      "decision": "Team and speaker portraits are round cut-outs on a solid brand ground, made by tools/portrait.py: face box 0.537 of the circle diameter, centred at 50 % height, crop bottom inside the photo (garment-colour fill when the photo ends at the neck), grounds rotating Bold Cyan / Blurple / Purple / Zingy Cyan, never Markup Yellow, and the batch matched to its median face luminance and edge sharpness. Delivered as <name>-round.png and <name>-square.jpg at 1080 px.",
+      "rationale": "Owner's organising-team set (2026-10-08): four photos from four cameras, iterated by eye until the heads were one size (the scale set by the photo whose hair had to meet the circle), two grounds swapped, one portrait softened and lowered, then all four matched. Recorded in components/portrait.md and the tool so the next set is one command.",
       "status": "approved"
     }
   ],

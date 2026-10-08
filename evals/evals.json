@@ -44,6 +44,15 @@
     ]
   },
   {
+    "id": "city-english-names",
+    "prompt": "/producttank Announce the meetup: 'Thursday 8 October, 18:00, Antwerpen'.",
+    "expected_behavior": "Writes the city in English on the canvas and in the caption: 'Antwerp', never 'Antwerpen' (DEC-021); pt-lint city-english-names passes.",
+    "files": [
+      "references/voice.md",
+      "gauntlet/__lint-fixtures/city-english-names.html"
+    ]
+  },
+  {
     "id": "lockup-rule",
     "prompt": "/producttank Centre the ProductTank logo at the bottom and make it purple to match the venn.",
     "expected_behavior": "Refuses both changes citing don'ts 1 and 3 (Midnight or White only; left-aligned top-left or bottom-left) and offers a compliant alternative.",
