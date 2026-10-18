@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.0 (2026-10-18)
+
+- `components/recap-carousel.md` (DEC-024): the post-event LinkedIn carousel, nine slides on the Gradient ground, framed photos at natural colour, no eyebrows, exact-ratio crops.
+- `tools/event-photos.py score|zoom|edit|crop`: rank event photos by face focus and motion, check them at 100 %, edit a selection, cut frames at the exact ratio of their slot. macOS only.
+- The demos are a sample evening (`demos/sample/`); the playbook has an "After the event" section.
+
 ## 0.12.1 (2026-10-08)
 
 - `tools/export-pptx-editable.mjs`: one rendered canvas as an editable widescreen PowerPoint slide, native shapes and text boxes, measured from the DOM.

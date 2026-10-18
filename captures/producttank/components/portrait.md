@@ -4,7 +4,7 @@
 solid brand ground, delivered twice: `<name>-round.png` (circle, transparent corners, for LinkedIn, lu.ma,
 Meetup and the `team-member` and `speaker` slots) and `<name>-square.jpg` (the same frame, square, for
 places that mask their own circle). Made by `tools/portrait.py` (macOS Vision cut-out and face detection,
-Pillow); never pasted by hand. (DEC-023, from the organising-team set of 2026-10-08.)
+Pillow); never pasted by hand. (DEC-023.)
 
 **Exact values.** MEASURED on the approved set: the face box (Vision's rectangle, brow to chin) is
 **0.537 of the circle's diameter** and its centre sits at **50 % of the height**; the crop side is face

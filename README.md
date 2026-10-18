@@ -6,7 +6,7 @@ Mind the Product brand. A machine checks each one before you use it.
 ProductTank meetups are free events for product people. Mind the Product runs the ProductTank
 network. This tool was made for ProductTank Belgium. Any ProductTank can use it.
 
-![Example: a LinkedIn post made with this tool](docs/demo-linkedin-post-2026-10-08.png)
+![Example: a LinkedIn post made with this tool](docs/demo-linkedin-post.png)
 
 ## What you get
 
@@ -84,7 +84,7 @@ With Claude Code:
 1. Open a new Claude Code session.
 2. Type `/producttank`.
 3. Write the facts of the event: the date, the time, the place, the speakers, and what you need.
-   Example: "A LinkedIn post for our meetup on Thursday 8 October at 18:30, two speakers."
+   Example: "A LinkedIn post for our meetup on Tuesday 14 October at 18:30, two speakers."
 4. Look at the picture the agent shows you. Ask for changes if you want them.
 
 Without an agent:
@@ -181,8 +181,8 @@ Examples, one per line. Change the city and the facts.
 
 - "I organise ProductTank Lisbon. Read the brand rules from the ProductTank server and tell me the
   colours, the font and the rules for the logo."
-- "ProductTank Belgium. Write a LinkedIn teaser for our meetup on Thursday 8 October in
-  Antwerp. One speaker is confirmed: <name>, <role> at <company>. The second speaker is not
+- "ProductTank Belgium. Write a LinkedIn teaser for our meetup on Tuesday 14 October in
+  Ghent. One speaker is confirmed: <name>, <role> at <company>. The second speaker is not
   confirmed. Use the voice guide from the server."
 - "ProductTank Manchester. Show me the list of social templates on the server and tell me which
   one fits a speaker announcement with a photo."
@@ -193,7 +193,7 @@ Examples, one per line. Change the city and the facts.
 - "ProductTank San Francisco. Write the text for the Meetup event page for a panel on pricing.
   Three panellists, names to follow. Doors at 6 pm, free, registration on Meetup. Follow the
   playbook on the server."
-- "ProductTank Belgium. Make an agenda slide for the 8 October meetup: doors 18:00, talk one
+- "ProductTank Belgium. Make an agenda slide for the 14 October meetup: doors 18:00, talk one
   18:35, break 19:20, talk two 19:35, networking until 21:00. Start from the agenda slide template
   on the server and check it before you show it to me."
 - "ProductTank Berlin. Here is the HTML of a post a volunteer made. Check it with `lint_html` on
@@ -296,7 +296,7 @@ captures/producttank/         the brand data: BRAND-FACTS.md, design-lock.json, 
 tools/                        the checker, the renderer, the contact sheet and the other tools
 gauntlet/                     all checks of the skill, and one broken test file for each brand rule
 evals/evals.json              test cases for the agent
-demos/2026-10-08/             three finished canvases with empty speaker slots
+demos/sample/                 three finished canvases with empty speaker slots
 ```
 
 ## Licence and trademarks

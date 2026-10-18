@@ -27,6 +27,7 @@ are placeholders; the skill never invents a real one (DEC-006).
 | 48–36 h before | Reminder / last call | `reminder` portrait + story | LinkedIn, Instagram story, WhatsApp, Meetup message | "RSVP on Meetup"; ask people to free their spot if they cannot come (waitlist) |
 | Day of | Story from the room | `event-announce-story` or `reminder-story` with a live photo | Instagram / LinkedIn stories | nothing more than the fact of the evening |
 | Day after | Recap + thanks + photos | `recap-thanks` portrait / landscape | LinkedIn (photos as a carousel), Meetup page | numbers only if counted, thanks to speakers and host, where slides and photos live |
+| Week after | Recap carousel with quotes | nine `social-portrait` slides on the Gradient ground (`components/recap-carousel.md`) | LinkedIn document post | quotes from the talks only, speakers' approval, sharp photos of the room |
 | Between events | Call for speakers / hosts / sponsors | `call-for` portrait / square | LinkedIn, WhatsApp | how to reach the organisers (Meetup message), no URL on the canvas |
 | Quarterly / yearly | Numbers, survey | `stat` square (carousel), `quote` portrait | LinkedIn, Instagram | numbers from the survey or Meetup stats, quoted with consent |
 | World Product Day (May) | WPD post | `event-announce-story` (Midnight ground) + portrait | all | MTP's WPD assets when provided by MTP |
@@ -61,6 +62,20 @@ in the first lines (a long message collapses behind "Read more").
 - The talks are product related and never promote a product; say so to speakers and hosts.
 - Speaker names, photos and titles come from the speakers themselves (they send bios, photos and
   titles per the checklist); never scrape or guess them.
+
+## After the event: photos and the recap carousel (DEC-024)
+
+1. **Photos.** `python3 tools/event-photos.py score --src <folder> --out <work>`; look at the contact
+   sheets; pick 15 to 20 frames that tell the evening in order (room filling, opening, each speaker,
+   the room listening, a question, one detail). `zoom` every pick at 100 %: drop motion blur and soft
+   faces. Write the picks as a spec and run `edit` into a new folder inside the photo folder
+   (`Selection-edited/`): reframed 3:2 or 4:5, natural tone, metadata stripped, originals untouched.
+2. **Transcript.** Find where each talk starts and ends (word counts per five minutes show the breaks);
+   quote only from the talks and their Q&A. The recorder may have run through the break: those parts
+   are private. A transcript's header date can be wrong; check the content against the event.
+3. **Carousel.** Build the nine slides from `components/recap-carousel.md`, cutting each photo with
+   `event-photos.py crop` at its slot's ratio. Lint, render, look at every slide, then one PDF.
+4. **Before posting.** Speakers approve their quotes; name every voice or attribute to the team.
 
 ## Photos
 

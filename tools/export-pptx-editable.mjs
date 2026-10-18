@@ -54,6 +54,8 @@ async function measure(browser, file) {
         if (cs.borderRadius.includes('%') && parseFloat(cs.borderRadius) >= 50) out.items.push({ t: 'circle', cx: bb.x + bb.w / 2, cy: bb.y + bb.h / 2, r: bb.w / 2, fill: bg, stroke: null, sw: 0 });
         else out.items.push({ t: 'rect', ...bb, fill: bg, radius: parseFloat(cs.borderRadius) || 0, name: n.className });
       }
+      const bw = parseFloat(cs.borderBottomWidth); const bc = bw ? hex(cs.borderBottomColor) : null;
+      if (bw && bc) out.items.push({ t: 'rect', x: bb.x, y: bb.y + bb.h - bw, w: bb.w, h: bw, fill: bc, radius: 0, name: 'divider' }); // row dividers
       if (n.classList.contains('markup')) { const ps = getComputedStyle(n, '::before'); const [top, left, right, bottom] = [ps.top, ps.left, ps.right, ps.bottom].map(parseFloat); out.items.push({ t: 'rect', x: bb.x + left, y: bb.y + top, w: bb.w - left - right, h: bb.h - top - bottom, fill: hex(ps.backgroundColor), radius: 6, rotate: -1, name: 'markup' }); }
       walk(n); } };
     walk(c); return out;

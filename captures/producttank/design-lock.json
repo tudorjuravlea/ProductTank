@@ -439,45 +439,45 @@
       "note": "archetype=carousel-cover format=social-portrait; tear-down reference: reference/figma/mtp-producttank-social-1080x1350.png"
     },
     {
-      "id": "demo-linkedin-cover-2026-10-08",
+      "id": "demo-linkedin-cover",
       "mode": "B2",
       "netNew": true,
       "captureWidth": 2256,
       "captureHeight": 382,
       "dpr": 1,
       "colorScheme": "light",
-      "url": "../../demos/2026-10-08/linkedin-cover-2026-10-08.html",
-      "stateContract": "demo: LinkedIn page cover for 8 October with two typed speaker slots (portrait, name, role, company); time and venue not supplied",
+      "url": "../../demos/sample/linkedin-cover.html",
+      "stateContract": "demo: LinkedIn page cover for a sample evening (Tuesday 14 October) with two typed speaker slots (portrait, name, role, company); time and venue not supplied",
       "locales": [
         "en"
       ],
       "note": "archetype=event-announce format=linkedin-cover; demo, not a shipped template"
     },
     {
-      "id": "demo-linkedin-post-2026-10-08",
+      "id": "demo-linkedin-post",
       "mode": "B2",
       "netNew": true,
       "captureWidth": 1080,
       "captureHeight": 1350,
       "dpr": 1,
       "colorScheme": "light",
-      "url": "../../demos/2026-10-08/linkedin-post-2026-10-08.html",
-      "stateContract": "demo: LinkedIn feed post (lineup portrait) for 8 October with two typed speaker slots; time and venue not supplied",
+      "url": "../../demos/sample/linkedin-post.html",
+      "stateContract": "demo: LinkedIn feed post (lineup portrait) for a sample evening (Tuesday 14 October) with two typed speaker slots; time and venue not supplied",
       "locales": [
         "en"
       ],
       "note": "archetype=lineup format=social-portrait; demo"
     },
     {
-      "id": "demo-opening-slide-2026-10-08",
+      "id": "demo-opening-slide",
       "mode": "B2",
       "netNew": true,
       "captureWidth": 1920,
       "captureHeight": 1080,
       "dpr": 1,
       "colorScheme": "dark",
-      "url": "../../demos/2026-10-08/opening-slide-2026-10-08.html",
-      "stateContract": "demo: opening slide (Today's speakers layout) for 8 October with two typed speaker slots",
+      "url": "../../demos/sample/opening-slide.html",
+      "stateContract": "demo: opening slide (Today's speakers layout) for a sample evening (Tuesday 14 October) with two typed speaker slots",
       "locales": [
         "en"
       ],
@@ -1686,7 +1686,7 @@
       "date": "2026-09-16",
       "scope": "component: facts-row",
       "decision": "The facts row carries no separator between its items: no Zingy Cyan dot, no bar. Items are separated by the row gap alone (`.facts { gap }` in base.css, widened to `--space-8`). The icon variant keeps its icons. Applies to every format and archetype; templates regenerated.",
-      "rationale": "Owner ruling 2026-09-16 on the 8 October teaser: \"remove the light blue dots between the date, time and place\", then \"switch off the dots in the rules as well not only for this canvas\". The dots were an inference from the website's separators (facts-row.md), never a measured brand value, so nothing in the lock's signatures or donts reads differently.",
+      "rationale": "Owner ruling 2026-09-16 on an event teaser: \"remove the light blue dots between the date, time and place\", then \"switch off the dots in the rules as well not only for this canvas\". The dots were an inference from the website's separators (facts-row.md), never a measured brand value, so nothing in the lock's signatures or donts reads differently.",
       "status": "approved"
     },
     {
@@ -1694,7 +1694,7 @@
       "date": "2026-09-21",
       "scope": "format: flyer-a6, flyer-a6-landscape",
       "decision": "A print format `flyer-a6`: 1311 x 1819 px = 111 x 154 mm at 300 dpi, the printer's file size for an A6 flyer with 3 mm bleed; trims to 105 x 148 mm. The canvas edge is the bleed edge, shapes bleed off it, copy stays at least 35 px (3 mm) inside the trim (margin 144 px). Exported to PDF at 111 x 154 mm by tools/print-pdf.mjs. A QR code is allowed on print canvases only (`.qr-card`, Midnight modules on a White card, derived art), because the printed page cannot carry a link; the no-URL rule still holds for the visible text. A landscape twin `flyer-a6-landscape` (1819 x 1311 px = 154 x 111 mm) follows the same rules.",
-      "rationale": "Owner brief 2026-09-21: A6 flyers for the 8 October meetup to the printer's template (Bestandsformaat 111 x 154, Eindformaat 105 x 148, afloop 3 mm, veiligheidsmarge 3 mm) with a QR to the Meetup event. The badge format (DEC-016) has no bleed, so a second A6 format was needed.",
+      "rationale": "Owner brief 2026-09-21: A6 flyers for an event to the printer's template (Bestandsformaat 111 x 154, Eindformaat 105 x 148, afloop 3 mm, veiligheidsmarge 3 mm) with a QR to the Meetup event. The badge format (DEC-016) has no bleed, so a second A6 format was needed.",
       "status": "approved"
     },
     {
@@ -1702,7 +1702,7 @@
       "date": "2026-09-21",
       "scope": "content: facts and line breaks",
       "decision": "Facts are arranged in a fixed order and on fixed lines: date (with its weekday, or none), time, place on the first line; 'Free to attend' on its own line below, never after the place; a weekday never sits beside a location pin; print copy carries the start time as 'Doors open at 18:00'; a call-to-action card sets one sentence per line ('Scan the code to RSVP on Meetup.' / 'Free to attend, as always.'); when the date is the message it lives inside the headline on the markup at the headline size.",
-      "rationale": "Fellow organiser's review of the 8 October flyers (2026-09-21): 'drop Thursday, it's odd behind a location icon', 'maybe add the start time', 'start a new line with Free to attend', then the owner: the card's second sentence on a new line, and the same on every dated flyer. Recorded in voice.md and facts-row.md so the skill and the served MCP items carry it.",
+      "rationale": "Fellow organiser's review of the first print flyers (2026-09-21): 'drop Thursday, it's odd behind a location icon', 'maybe add the start time', 'start a new line with Free to attend', then the owner: the card's second sentence on a new line, and the same on every dated flyer. Recorded in voice.md and facts-row.md so the skill and the served MCP items carry it.",
       "status": "approved"
     },
     {
@@ -1727,6 +1727,14 @@
       "scope": "component: portrait",
       "decision": "Team and speaker portraits are round cut-outs on a solid brand ground, made by tools/portrait.py: face box 0.537 of the circle diameter, centred at 50 % height, crop bottom inside the photo (garment-colour fill when the photo ends at the neck), grounds rotating Bold Cyan / Blurple / Purple / Zingy Cyan, never Markup Yellow, and the batch matched to its median face luminance and edge sharpness. Delivered as <name>-round.png and <name>-square.jpg at 1080 px.",
       "rationale": "Owner's organising-team set (2026-10-08): four photos from four cameras, iterated by eye until the heads were one size (the scale set by the photo whose hair had to meet the circle), two grounds swapped, one portrait softened and lowered, then all four matched. Recorded in components/portrait.md and the tool so the next set is one command.",
+      "status": "approved"
+    },
+    {
+      "id": "DEC-024",
+      "date": "2026-10-18",
+      "scope": "content: recap carousel and event photos",
+      "decision": "A post-event recap is a nine-slide social-portrait carousel on the Gradient ground (components/recap-carousel.md): no eyebrow pills above titles or quotes, a counter written as words, event photos in rounded frames at natural colour without the tritone wash, each cut at the exact ratio of its slot so gestures and hands stay in, each photo used once, the cover showing the whole room beside the two speakers. Only photos sharp on the subject (no motion blur, no soft faces), checked by face-focus score and at 100 %. Quotes only from the talks and their Q&A, speakers approve them. tools/event-photos.py scores, edits and crops.",
+      "rationale": "Owner's iterations on the first recap carousel: gradient on every slide, layout variations, clearer audience photos framed rather than washed full-bleed, no eyebrows, the whole room on the cover, a raised hand and a gesture that must not be cropped, better portraits, and no blurred or out-of-focus frames. Recorded so the next recap is one pass.",
       "status": "approved"
     }
   ],

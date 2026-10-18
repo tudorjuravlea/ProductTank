@@ -135,7 +135,7 @@ carry `netNew: true` and are honestly reported as "lint, render, geometry ok; no
 
 Anatomy library first: before composing any region, read `CAPTURE/components/INDEX.md` and the
 spec it points to (lockup, headline, facts-row, venn, markup, label-pill, text-highlight,
-photo-cutout, portrait, stat) and build from its exact values; the measured numbers are in
+photo-cutout, portrait, recap-carousel, stat) and build from its exact values; the measured numbers are in
 `CAPTURE/BRAND-FACTS.md` §8. Shapes: `CAPTURE/assets/shapes/INDEX.md`. Every gap is named in the
 report as a capture task, never improvised.
 
@@ -244,6 +244,7 @@ per hard rule; every fixture in `files` must exist (gauntlet lane `evals-files`)
 | Shapes (venn, markup, Venniverse) | `captures/producttank/assets/shapes/INDEX.md` |
 | Reference renders and their provenance | `captures/producttank/reference/figma/REGISTRATION.md` |
 | Regenerate the templates after a rule change | `captures/producttank/templates/social/_build.mjs --register`, `templates/slides/_build.mjs --register` |
+| Event photos: score focus, zoom at 100 %, edit a selection, cut exact-ratio frames | `tools/event-photos.py score|zoom|edit|crop` (components/recap-carousel.md) |
 | Round team or speaker portraits on brand grounds, batch matched | `tools/portrait.py --src <dir> --out <dir>` (components/portrait.md) |
 | Keep base.css masks in sync with the shape files | `tools/sync-shapes-css.mjs` |
 | Second Figma pass (node geometry, official shapes) | `tools/figma-pass-2.mjs` |

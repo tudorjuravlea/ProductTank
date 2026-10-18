@@ -24,7 +24,7 @@ guide". Humour that punches at the craft, not at people.
 18:00", never "Doors 18:00" (owner ruling, 2026-09-16).
 
 **Arrangement of facts and lines** (organiser rulings, 2026-09-21, DEC-020):
-- A weekday goes with the date ("Thursday 8 October") or nowhere; never beside a location pin
+- A weekday goes with the date ("Tuesday 14 October") or nowhere; never beside a location pin
   ("Thursday, Antwerp" reads wrong).
 - Print and flyer copy carries the start time as a fact: "Doors open at 18:00".
 - The facts line holds place and time; "Free to attend" starts a new line of its own, never tucked
@@ -32,7 +32,7 @@ guide". Humour that punches at the craft, not at people.
 - In a call-to-action card, one sentence per line: "Scan the code to RSVP on Meetup." then
   "Free to attend, as always." on the line below. Never run two sentences together on one line.
 - When the date is the message, it sits inside the headline on the markup ("Guess who's back on
-  8 October"), at the headline's own size.
+  14 October"), at the headline's own size.
 
 **Headlines:** sentence case, one message. Caps only in the label pill and the text highlight.
 The Oxford comma stays ("speakers, hosts, and sponsors").

@@ -14,6 +14,7 @@ INFERRED (derived from the Brand Guide's rules). Selection by intent:
 | a category tag ("Community spotlight", "Last call") | `label-pill.md` | Midnight box, white caps |
 | two related facts in one row ("14 October | 18:30") | `text-highlight.md` | Bold Cyan + White cells |
 | a person or place | `photo-cutout.md` | subject cut-out bleeding off an edge, over the venn |
+| a post-event recap carousel (quotes, speakers, the room) | `recap-carousel.md` | nine Gradient slides, framed photos without wash, no eyebrows, exact-ratio crops from `tools/event-photos.py` (DEC-024) |
 | a round team or speaker portrait on a brand ground | `portrait.md` | face 0.537 of the circle, grounds rotate Bold Cyan / Blurple / Purple / Zingy Cyan, batch matched for brightness and sharpness; `tools/portrait.py` (DEC-023) |
 | a number with a caption | `stat.md` | numbers carousel pattern |
 | a speaker tease, a team intro, a carousel cover, three speakers in columns, a square promo with a host, an evergreen LinkedIn cover | `chapter-layouts.md` | six compositions learned from other chapters' posts (DEC-015) |
