@@ -6,7 +6,9 @@ Mind the Product brand. A machine checks each one before you use it.
 ProductTank meetups are free events for product people. Mind the Product runs the ProductTank
 network. This tool was made for ProductTank Belgium. Any ProductTank can use it.
 
-![Example: a LinkedIn post made with this tool](docs/demo-linkedin-post.png)
+**Guide and examples for organisers: [tudorjuravlea.github.io/ProductTank](https://tudorjuravlea.github.io/ProductTank/)**
+
+[![One prompt in Claude Code, an event announcement in light blue and dark blue](docs/img/frame-1-announce.jpg)](https://tudorjuravlea.github.io/ProductTank/)
 
 ## What you get
 

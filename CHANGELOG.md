@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.13.1 (2026-10-22)
+
+- A guide and examples page for organisers, served by GitHub Pages from `docs/`: https://tudorjuravlea.github.io/ProductTank/
+- The README opens with a link to it.
+
 ## 0.13.0 (2026-10-18)
 
 - `components/recap-carousel.md` (DEC-024): the post-event LinkedIn carousel, nine slides on the Gradient ground, framed photos at natural colour, no eyebrows, exact-ratio crops.

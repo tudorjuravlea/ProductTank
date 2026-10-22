@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ProductTank Brand Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A free kit that hands the Mind the Product brand to your AI assistant, for ProductTank organisers: templates, a brand checker and a hosted server.">
+<meta property="og:title" content="ProductTank Brand Kit">
+<meta property="og:description" content="On-brand ProductTank posts and slides in minutes, with Claude or ChatGPT.">
+<meta property="og:image" content="https://tudorjuravlea.github.io/ProductTank/img/frame-1-announce.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column with wide gallery bands; Mind the Product palette, Montserrat, one yellow markup per section heading. */
+:root {
+  --bg: #F6F5F9;
+  --surface: #FFFFFF;
+  --line: #E1DFEA;
+  --fg: #17044A;          /* Midnight */
+  --muted: #514673;
+  --accent: #126CFF;      /* Bold Cyan */
+  --accent-ink: #FFFFFF;
+  --markup: #ECF023;      /* Markup Yellow */
+  --markup-ink: #17044A;
+  --code-bg: #17044A;
+  --code-fg: #F6F5F9;
+  --band: #17044A;
+  --band-fg: #FFFFFF;
+  --band-muted: #C9C3E0;
+  --font-display: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  --font-body: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #060119; --surface: #120A33; --line: #2A1F57; --fg: #F3F1FA; --muted: #B7B0D4;
+    --accent: #4F8DFF; --accent-ink: #060119; --code-bg: #120A33; --code-fg: #F3F1FA;
+    --band: #120A33; --band-fg: #FFFFFF; --band-muted: #B7B0D4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #060119; --surface: #120A33; --line: #2A1F57; --fg: #F3F1FA; --muted: #B7B0D4;
+  --accent: #4F8DFF; --accent-ink: #060119; --code-bg: #120A33; --code-fg: #F3F1FA;
+  --band: #120A33; --band-fg: #FFFFFF; --band-muted: #B7B0D4;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+@media (prefers-color-scheme: dark) { html { color-scheme: dark; } }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.col { max-width: 720px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.1rem, 5.5vw, 3.6rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); }
+h3 { font-size: 1.15rem; }
+p { margin: 0; }
+a { color: var(--accent); font-weight: 600; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.mark { background: var(--markup); color: var(--markup-ink); padding: 0 .18em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.pill { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: #4546E0; color: #FFFFFF; padding: .2em .6em; border-radius: 3px; }
+section { padding-block: 72px; }
+section + section { border-top: 1px solid var(--line); }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.stack { display: flex; flex-direction: column; gap: 20px; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #3E67E7 0%, #3530AE 55%, #17044A 100%); color: #FFFFFF; position: relative; overflow: hidden; }
+.hero .wrap { padding-block: 80px 72px; position: relative; z-index: 1; }
+.hero .lede { color: #E4E2F5; max-width: 640px; }
+.hero .mark { color: #17044A; }
+.rings { position: absolute; right: -120px; top: -80px; width: 460px; height: 460px; border-radius: 50%; z-index: 0;
+  background: repeating-radial-gradient(circle, transparent 0 34px, #21CCFA 34px 52px); opacity: .55; }
+.ring2 { position: absolute; right: 180px; bottom: -160px; width: 320px; height: 320px; border-radius: 50%; border: 18px solid #8B4BEF; z-index: 0; opacity: .8; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 999px; font-size: .95rem; border: 0; cursor: pointer; font-family: var(--font-body); }
+.btn-yellow { background: #ECF023; color: #17044A; }
+.btn-ghost { background: transparent; color: #FFFFFF; box-shadow: inset 0 0 0 2px rgba(255,255,255,.7); }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 12px; font-size: .9rem; color: #E4E2F5; }
+.facts b { color: #FFFFFF; }
+
+/* Paths */
+.paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.path { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.path .who { font-size: .85rem; color: var(--muted); }
+.path ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: .95rem; }
+
+/* Steps */
+ol.steps { list-style: none; counter-reset: s; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 28px; }
+ol.steps > li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 16px; }
+ol.steps > li::before { content: counter(s); width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 800; display: grid; place-items: center; font-size: 1.05rem; }
+ol.steps > li > div { min-width: 0; display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.muted { color: var(--muted); }
+.small { font-size: .9rem; }
+
+/* Copy block */
+.copy { position: relative; background: var(--code-bg); color: var(--code-fg); border-radius: 10px; font-family: var(--font-mono); font-size: .88rem; line-height: 1.5; }
+.copy pre { margin: 0; padding: 14px 92px 14px 16px; white-space: pre-wrap; word-break: break-word; font-family: inherit; }
+.copy button { position: absolute; top: 8px; right: 8px; background: #ECF023; color: #17044A; border: 0; border-radius: 6px; font: 700 .78rem var(--font-body); padding: 6px 10px; cursor: pointer; }
+
+/* Tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.tab { background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font: 600 .9rem var(--font-body); cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.panel { display: flex; flex-direction: column; gap: 10px; }
+.panel ol { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+
+/* Prompts */
+.prompts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.prompt { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.prompt .label { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.prompt p { font-size: .95rem; }
+.prompt button { align-self: flex-start; background: transparent; border: 1px solid var(--line); color: var(--fg); border-radius: 6px; font: 600 .8rem var(--font-body); padding: 5px 10px; cursor: pointer; }
+
+/* Galleries */
+.band { background: var(--band); color: var(--band-fg); }
+.band .lede, .band .muted { color: var(--band-muted); }
+.band a { color: #ECF023; }
+.frames { display: flex; flex-direction: column; gap: 48px; }
+.frame figcaption { font-size: 1rem; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+.gallery.wide { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+figure { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+figure img { width: 100%; height: auto; display: block; border-radius: 8px; box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 8px 24px rgba(23,4,74,.18); }
+figcaption { font-size: .82rem; line-height: 1.4; color: inherit; opacity: .85; }
+figcaption b { display: block; opacity: 1; }
+.subhead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 40px; margin-bottom: 16px; }
+
+/* Made-with list */
+.made { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.made div { border-left: 3px solid #ECF023; padding: 4px 0 4px 14px; min-width: 0; }
+.made b { display: block; }
+.made span { font-size: .9rem; color: var(--band-muted); }
+
+/* Rules */
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.rule { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.rule p { font-size: .93rem; color: var(--muted); }
+
+details { border-bottom: 1px solid var(--line); padding-block: 14px; }
+details summary { cursor: pointer; font-weight: 700; }
+details p { margin-top: 8px; color: var(--muted); }
+footer { padding-block: 48px; font-size: .9rem; color: var(--muted); }
+code { font-family: var(--font-mono); font-size: .9em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
+.band code { background: transparent; color: var(--band-fg); border-color: rgba(255,255,255,.25); }
+@media (prefers-reduced-motion: no-preference) { .btn, .tab { transition: transform .15s ease; } .btn:hover { transform: translateY(-1px); } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="rings" aria-hidden="true"></div>
+  <div class="ring2" aria-hidden="true"></div>
+  <div class="wrap stack">
+    <span class="pill" style="align-self:flex-start;background:#ECF023;color:#17044A">For ProductTank organisers</span>
+    <h1>Your chapter's posts and slides, <span class="mark">on brand</span> in minutes</h1>
+    <p class="lede">A free kit that hands the Mind the Product brand to your AI assistant: colours, Montserrat, the lockup rules, 65 ready templates and a checker that catches what breaks the brand. Built and road-tested by ProductTank Belgium. Any chapter can use it today.</p>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="#start">Start in 5 minutes</a>
+      <a class="btn btn-ghost" href="https://github.com/tudorjuravlea/ProductTank">GitHub repo</a>
+    </div>
+    <div class="facts">
+      <span><b>Free</b> and open, no account</span>
+      <span>Works with <b>Claude</b>, <b>ChatGPT</b> and <b>Gemini CLI</b></span>
+      <span><b>Your chapter's</b> name and lockup</span>
+      <span><b>Never</b> invents a date, venue or speaker</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap stack">
+      <h2>Two ways in, <span class="mark">pick one</span></h2>
+      <p class="lede col">Most organisers only need the first one. The second is for when you want finished PNG, PDF and PowerPoint files straight out of the tool.</p>
+      <div class="paths">
+        <div class="path">
+          <span class="pill" style="align-self:flex-start">5 minutes</span>
+          <h3>The hosted server</h3>
+          <p class="who">For everyone. Nothing to install.</p>
+          <ul>
+            <li>Add one address to Claude or ChatGPT as a connector</li>
+            <li>Say your chapter name, then ask for what you need</li>
+            <li>Get on-brand copy, HTML drafts and a brand check</li>
+          </ul>
+        </div>
+        <div class="path">
+          <span class="pill" style="align-self:flex-start">About 20 minutes</span>
+          <h3>The full skill</h3>
+          <p class="who">For organisers who use Claude Code on a Mac or Linux.</p>
+          <ul>
+            <li>Clone the GitHub repo, run five commands</li>
+            <li>Type <code>/producttank</code> and give the facts</li>
+            <li>Get checked PNGs, print PDFs and editable PowerPoint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="wrap stack">
+      <h2>Start with the <span class="mark">hosted server</span></h2>
+      <ol class="steps col" style="max-width:820px">
+        <li><div>
+          <h3>Copy the server address</h3>
+          <div class="copy"><pre id="url">https://mcp.product.brussels/mcp</pre><button type="button" data-copy="url">Copy</button></div>
+          <p class="muted small">Want to check it is up? Open <a href="https://mcp.product.brussels/healthz">mcp.product.brussels/healthz</a> and look for <code>"ok":true</code>.</p>
+        </div></li>
+        <li><div>
+          <h3>Add it to your assistant</h3>
+          <div class="tabs" role="tablist" aria-label="Choose your assistant">
+            <button class="tab" role="tab" id="t-claude" aria-selected="true" aria-controls="p-claude">Claude</button>
+            <button class="tab" role="tab" id="t-chatgpt" aria-selected="false" aria-controls="p-chatgpt">ChatGPT</button>
+            <button class="tab" role="tab" id="t-code" aria-selected="false" aria-controls="p-code">Claude Code</button>
+            <button class="tab" role="tab" id="t-gemini" aria-selected="false" aria-controls="p-gemini">Gemini CLI</button>
+          </div>
+          <div class="panel" role="tabpanel" id="p-claude" aria-labelledby="t-claude">
+            <ol>
+              <li>On the web or desktop app (paid plan), open <b>Settings</b>, then <b>Connectors</b>.</li>
+              <li>Click <b>Add custom connector</b>.</li>
+              <li>Name it <code>ProductTank</code> and paste the address. Leave the other fields empty.</li>
+              <li>In a new chat, open the tools menu and switch ProductTank on.</li>
+            </ol>
+          </div>
+          <div class="panel" role="tabpanel" id="p-chatgpt" aria-labelledby="t-chatgpt" hidden>
+            <ol>
+              <li>Paid plan needed. On Business or Enterprise, an admin must allow custom connectors first.</li>
+              <li>Open <b>Settings</b>, <b>Connectors</b>, <b>Advanced</b>, and turn on <b>Developer mode</b>.</li>
+              <li>Back in Connectors, click <b>Create</b>. Name <code>ProductTank</code>, paste the address, authentication <b>No authentication</b>.</li>
+              <li>In a new chat, open the plus menu, choose Developer mode and tick ProductTank.</li>
+            </ol>
+          </div>
+          <div class="panel" role="tabpanel" id="p-code" aria-labelledby="t-code" hidden>
+            <p>One command in your terminal:</p>
+            <div class="copy"><pre id="cmd-claude">claude mcp add --transport http producttank https://mcp.product.brussels/mcp</pre><button type="button" data-copy="cmd-claude">Copy</button></div>
+          </div>
+          <div class="panel" role="tabpanel" id="p-gemini" aria-labelledby="t-gemini" hidden>
+            <p>One command in your terminal:</p>
+            <div class="copy"><pre id="cmd-gemini">gemini mcp add --transport http producttank https://mcp.product.brussels/mcp</pre><button type="button" data-copy="cmd-gemini">Copy</button></div>
+            <p class="muted small">The Gemini web and phone apps cannot add their own servers yet. Use the CLI.</p>
+          </div>
+        </div></li>
+        <li><div>
+          <h3>Say your chapter first</h3>
+          <p>The server asks for it on every call, so your posts carry your city's name and lockup. Start with something like “I organise ProductTank Lisbon.” If Mind the Product has not sent an official lockup for your chapter yet, the server builds one from the official wordmark and marks it as derived.</p>
+        </div></li>
+        <li><div>
+          <h3>Ask for what you need, with the facts you have</h3>
+          <p>Give the date, time, place and speakers you know. Anything you leave out stays an empty slot. It will not make up a venue or a name to fill the space.</p>
+        </div></li>
+        <li><div>
+          <h3>Let it check its own work</h3>
+          <p>Ask it to run the result through <code>lint_html</code>. The checker flags off-brand colours, the wrong font, a missing lockup, “PMs” instead of product people, a date without the month spelled out, and more.</p>
+        </div></li>
+      </ol>
+
+      <div class="subhead"><h3>Prompts to copy</h3><span class="muted small">Change the city and the facts</span></div>
+      <div class="prompts">
+        <div class="prompt"><span class="label">Learn the brand</span><p id="pr1">I organise ProductTank Lisbon. Read the brand rules from the ProductTank server and tell me the colours, the font and the rules for the logo.</p><button type="button" data-copy="pr1">Copy prompt</button></div>
+        <div class="prompt"><span class="label">Teaser post</span><p id="pr2">ProductTank Manchester. Write a LinkedIn teaser for our meetup on Tuesday 14 October. One speaker is confirmed: &lt;name&gt;, &lt;role&gt; at &lt;company&gt;. The second is not confirmed yet. Use the voice guide from the server.</p><button type="button" data-copy="pr2">Copy prompt</button></div>
+        <div class="prompt"><span class="label">Fill a template</span><p id="pr3">ProductTank Berlin. Get the speaker tease template from the server and fill it: name &lt;name&gt;, Head of Product at &lt;company&gt;, Tuesday 3 November. Leave the talk title empty. Check it with lint_html and fix every error.</p><button type="button" data-copy="pr3">Copy prompt</button></div>
+        <div class="prompt"><span class="label">Agenda slide</span><p id="pr4">ProductTank Belgium. Make an agenda slide: doors 18:00, talk one 18:35, break 19:20, talk two 19:35, networking until 21:00. Start from the agenda slide template and check it before you show it to me.</p><button type="button" data-copy="pr4">Copy prompt</button></div>
+        <div class="prompt"><span class="label">Meetup page text</span><p id="pr5">ProductTank San Francisco. Write the Meetup event page for a panel on pricing. Three panellists, names to follow. Doors at 18:00, free, registration on Meetup. Follow the playbook on the server.</p><button type="button" data-copy="pr5">Copy prompt</button></div>
+        <div class="prompt"><span class="label">Check a volunteer's post</span><p id="pr6">ProductTank Lisbon. Here is the HTML of a post a volunteer made. Check it with lint_html and list what breaks the brand.</p><button type="button" data-copy="pr6">Copy prompt</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="gallery">
+    <div class="wrap stack">
+      <h2>One prompt, <span class="mark">two looks</span></h2>
+      <p class="lede col">Every example below came from one prompt like the one on the left. Each comes in light blue and dark blue, checked against the brand before you see it.</p>
+      <div class="frames">
+        <figure class="frame"><img src="img/frame-1-announce.jpg" alt="Put the date on every feed: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Put the date on every feed</b>Event announcements, square or portrait, for LinkedIn and Instagram.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-2-meetup-cover.jpg" alt="Dress up your Meetup page: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Dress up your Meetup page</b>The 16:9 cover image for your Meetup event page.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-3-slides.jpg" alt="Run the room in style: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Run the room in style</b>Agenda, speaker and closing slides, as PNG, PDF or editable PowerPoint.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-4-posts.jpg" alt="Make your speaker the star: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Make your speaker the star</b>Speaker teases and posts for Instagram and LinkedIn.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-5-city-logo.jpg" alt="Make it your chapter: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Make it your chapter</b>Drop in your own city lockup and every template carries it.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-6-speaker-photo.jpg" alt="Put a face to the talk: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Put a face to the talk</b>Send a photo: it is cut out, framed round and placed on the slide.</figcaption></figure>
+        <figure class="frame"><img src="img/frame-7-variations.jpg" alt="Remix the layout, keep the brand: the Claude Code prompt on the left, the light blue and dark blue results on the right" loading="lazy"><figcaption><b>Remix the layout, keep the brand</b>Ask for variations and get new arrangements that still pass the brand check.</figcaption></figure>
+      </div>
+      <div class="subhead"><h3>Also made with it in Belgium</h3></div>
+      <div class="made">
+        <div><b>Feedback slide with a QR code</b><span>Shown at the end of every evening</span></div>
+        <div><b>lu.ma and LinkedIn page covers</b><span>One look across Brussels, Antwerp, Ghent and Leuven</span></div>
+        <div><b>Print flyers</b><span>A4 PDFs for the venue's front door</span></div>
+        <div><b>Round team portraits</b><span>Heads framed the same size, brand-colour grounds</span></div>
+        <div><b>Recap carousel</b><span>Edited event photos and quotes from the talks</span></div>
+        <div><b>Post-event report</b><span>Attendance and feedback as a branded PDF for the team</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap stack">
+      <h2>House rules it <span class="mark">keeps for you</span></h2>
+      <div class="rules">
+        <div class="rule"><h3>The lockup stays put</h3><p>White or Midnight, top or bottom left, never recoloured, retyped or stretched.</p></div>
+        <div class="rule"><h3>One yellow markup</h3><p>One highlighted word per canvas, the key word of the message.</p></div>
+        <div class="rule"><h3>Brand grounds only</h3><p>Bold Cyan, Black, Midnight or the gradient. Yellow is for markup, never a background.</p></div>
+        <div class="rule"><h3>Product people</h3><p>Never “PMs”. Mind the Product and ProductTank spelled exactly.</p></div>
+        <div class="rule"><h3>Dates people can read</h3><p>“Tuesday 14 October, 18:30”. Month spelled out, 24-hour time.</p></div>
+        <div class="rule"><h3>No invented facts</h3><p>A missing date, venue, speaker or number stays an empty slot until you give it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap stack col">
+      <h2>Questions</h2>
+      <div>
+        <details><summary>Does it cost anything?</summary><p>No. The server is free and open with no login. You only need a paid plan of the assistant you already use, because custom connectors are a paid feature in Claude and ChatGPT.</p></details>
+        <details><summary>What does the server see of my work?</summary><p>It is read only. Your assistant reads the brand rules and templates from it. The only work of yours it receives is HTML you ask it to check.</p></details>
+        <details><summary>Can it make the final image for me?</summary><p>The hosted server gives your assistant everything it needs to write the post as HTML. For finished PNG, PDF and PowerPoint files with all the checks, use the full skill with Claude Code. The install guide is in the <a href="https://github.com/tudorjuravlea/ProductTank#install">GitHub README</a>.</p></details>
+        <details><summary>My chapter is not Belgium. Whose logo will I get?</summary><p>Yours. Say your chapter and the templates come back with your city's name. If there is no official lockup file for your chapter, it is drawn from the official wordmark and marked as derived. Ask your regional coordinator at Mind the Product for the official files.</p></details>
+        <details><summary>Something looks off, or I want a new template</summary><p>Open an issue on <a href="https://github.com/tudorjuravlea/ProductTank/issues">GitHub</a> or reply in this thread. Templates other chapters have made are welcome too.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Made by the ProductTank Belgium organising team. ProductTank and Mind the Product names and lockups are Mind the Product's, used with permission for chapter communication. Montserrat is under the SIL Open Font License.</div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const el = document.getElementById(btn.dataset.copy);
+    const text = el.textContent.trim();
+    const done = () => { const t = btn.textContent; btn.textContent = 'Copied'; setTimeout(() => btn.textContent = t, 1500); };
+    const select = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(text).then(done, select); } catch (e) { select(); }
+  });
+});
+const tabs = [...document.querySelectorAll('.tab')];
+tabs.forEach(tab => tab.addEventListener('click', () => {
+  tabs.forEach(t => { const on = t === tab; t.setAttribute('aria-selected', on); document.getElementById(t.getAttribute('aria-controls')).hidden = !on; });
+}));
+</script>
+
+</body>
+</html>
