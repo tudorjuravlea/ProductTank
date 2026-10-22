@@ -154,6 +154,8 @@ footer .wrap p { max-width: 720px; }
 .about { display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px; }
 .about img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; background: #126CFF; }
 .about > div { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.about-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; margin-top: 8px; }
+.btn-gh { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
 .about .role { color: var(--muted); font-weight: 600; }
 @media (max-width: 640px) { .about { grid-template-columns: 1fr; padding: 24px; } .about img { width: 128px; height: 128px; } }
 code { font-family: var(--font-mono); font-size: .9em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
@@ -343,6 +345,10 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--surface
           <p class="role">Service experience design lead and product consultant, co-organiser of ProductTank Belgium</p>
           <p>I help teams design services people actually want to use, from research and workshops to the screens and journeys that ship. Before moving to Brussels I ran the Design Thinking Society, a consultancy that worked with more than 40 companies in banking, telecoms and retail, and I taught UX to career switchers.</p>
           <p>I built this kit so organisers spend less time fighting templates and more time with their community. If it helps your chapter, I would love to hear about it.</p>
+          <div class="about-actions">
+            <a class="btn btn-gh" href="https://github.com/tudorjuravlea">Follow me on GitHub</a>
+            <a class="btn btn-in" href="https://www.linkedin.com/in/tudorjuravlea/">Add me on LinkedIn</a>
+          </div>
         </div>
       </div>
     </div>
@@ -352,7 +358,6 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--surface
 <footer>
   <div class="wrap">
     <p>Made by Tudor Juravlea, co-organiser of ProductTank Belgium. ProductTank and Mind the Product names and lockups are Mind the Product's, used with permission for chapter communication. Montserrat is under the SIL Open Font License.</p>
-    <a class="btn btn-in" href="https://www.linkedin.com/in/tudorjuravlea/">Add me on LinkedIn</a>
   </div>
 </footer>
 
