@@ -134,13 +134,13 @@ figcaption b { display: block; opacity: 1; }
 .subhead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 40px; margin-bottom: 16px; }
 
 /* Made-with list */
-.made { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.made { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .made div { border-left: 3px solid #ECF023; padding: 4px 0 4px 14px; min-width: 0; }
 .made b { display: block; }
 .made span { font-size: .9rem; color: var(--band-muted); }
 
 /* Rules */
-.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.rules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .rule { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px; }
 .rule p { font-size: .93rem; color: var(--muted); }
 
@@ -149,11 +149,12 @@ details summary { cursor: pointer; font-weight: 700; }
 details p { margin-top: 8px; color: var(--muted); }
 footer { padding-block: 48px; font-size: .9rem; color: var(--muted); }
 footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
-footer .wrap p { max-width: 720px; }
 .btn-in { background: var(--accent); color: var(--accent-ink); }
 .about { display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px; }
 .about img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; background: #126CFF; }
 .about > div { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+@media (max-width: 860px) { .made, .rules { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .made, .rules { grid-template-columns: 1fr; } }
 .about-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; margin-top: 8px; }
 .btn-gh { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
 .about .role { color: var(--muted); font-weight: 600; }
@@ -343,7 +344,7 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--surface
         <div>
           <h3>Tudor Juravlea</h3>
           <p class="role">Service Experience Design Lead &amp; Product Consultant, co-organiser of ProductTank Belgium</p>
-          <p>I help teams design services people actually want to use, from research and workshops to the screens and journeys that ship. Before moving to Brussels I ran the Design Thinking Society, a consultancy that worked with more than 40 companies in banking, telecoms and retail, and I taught UX to career switchers.</p>
+          <p>I help teams design services people actually want to use, from research and workshops to the screens and journeys that ship. Before moving to Brussels I ran the Design Thinking Society, a consultancy that worked with more than 40 companies in banking, telecoms and retail, and taught a 4-month Product Design bootcamp for 9 years.</p>
           <p>I built this kit so organisers spend less time fighting templates and more time with their community. If it helps your chapter, I would love to hear about it.</p>
           <div class="about-actions">
             <a class="btn btn-gh" href="https://github.com/tudorjuravlea">Follow me on GitHub</a>
